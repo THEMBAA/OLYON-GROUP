@@ -437,6 +437,26 @@ footer { background:var(--navy-deep); border-top:1px solid var(--border); paddin
  -webkit-user-select: none;
 }
 
+/* FORM SUCCESS MESSAGE */
+.form-success {
+ text-align:center;
+ padding:48px 0;
+}
+.form-success-icon {
+ font-size:48px;
+ margin-bottom:16px;
+}
+.form-success h3 {
+ font-family:'Cormorant Garamond',serif;
+ font-size:26px;
+ color:var(--white);
+ margin-bottom:10px;
+}
+.form-success p {
+ font-size:14px;
+ color:var(--slate);
+}
+
 @media(max-width:900px){
  nav { padding:16px 24px; }
  .nav-links { display:none; }
@@ -466,57 +486,6 @@ footer { background:var(--navy-deep); border-top:1px solid var(--border); paddin
 }
 </style>
 <base target="_blank">
-<!--
-============================================================
-GOOGLE FORMS SETUP INSTRUCTIONS
-============================================================
-
-To save form data to Google Drive (via Google Sheets):
-
-STEP 1: Create Google Forms
-1. Go to https://forms.google.com
-2. Create a new form for "Job Applications"
-3. Add these fields (matching the form above):
-   - First Name (Short answer)
-   - Last Name (Short answer)
-   - Email Address (Short answer)
-   - Phone Number (Short answer)
-   - City / Province (Short answer)
-   - Years of Sales Experience (Multiple choice)
-   - Preferred Market (Multiple choice)
-   - Tell us about yourself (Paragraph)
-
-4. Create another form for "General Enquiries"
-5. Add fields:
-   - Your Name (Short answer)
-   - Company (Short answer)
-   - Email Address (Short answer)
-   - Subject (Multiple choice)
-   - Message (Paragraph)
-
-STEP 2: Get Form Entry IDs
-1. Open your Google Form
-2. Click "Send" → "Link" icon → copy the form URL
-3. Right-click → "View page source"
-4. Search for "entry." to find the field IDs
-5. Replace the entry.XXXXXXXXXX IDs in the HTML above
-
-STEP 3: Get Form Action URL
-1. The form action URL looks like:
-   https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse
-2. Replace "YOUR_APPLY_FORM_ID" and "YOUR_ENQUIRY_FORM_ID" in the JavaScript above
-
-STEP 4: Link to Google Sheets
-1. In Google Forms, click "Responses" tab
-2. Click the green Sheets icon
-3. Choose "Create a new spreadsheet"
-4. Data will auto-save to Google Sheets (which is in Google Drive)
-
-STEP 5: Test
-1. Fill out the form on your website
-2. Check the Google Sheet for the response
-============================================================
--->
 </head>
 <body>
 
@@ -890,30 +859,30 @@ STEP 5: Test
  <button class="f-tab" onclick="switchTab('enquiry')">General Enquiry</button>
  </div>
  <div class="f-panel active" id="f-apply">
-        <form id="applyForm" onsubmit="return submitToGoogleForms(this, 'apply');">
+        <form id="applyForm" onsubmit="return submitToSheet(this, 'apply');">
         <div class="f-row">
-          <div class="f-group"><label>First Name *</label><input type="text" id="apply-firstname" placeholder="Your first name" required></div>
-          <div class="f-group"><label>Last Name *</label><input type="text" id="apply-lastname" placeholder="Your last name" required></div>
+          <div class="f-group"><label>First Name *</label><input type="text" name="First Name" placeholder="Your first name" required></div>
+          <div class="f-group"><label>Last Name *</label><input type="text" name="Last Name" placeholder="Your last name" required></div>
         </div>
-        <div class="f-group"><label>Email Address *</label><input type="email" id="apply-email" placeholder="your@email.com" required></div>
-        <div class="f-group"><label>Phone Number *</label><input type="tel" id="apply-phone" placeholder="+27 XX XXX XXXX" required></div>
-        <div class="f-group"><label>City / Province *</label><input type="text" id="apply-location" placeholder="e.g. Johannesburg, Gauteng" required></div>
-        <div class="f-group"><label>Years of Sales Experience *</label><select id="apply-experience" required><option value="">Select experience level</option><option value="Less than 1 year">Less than 1 year</option><option value="1 - 2 years">1 - 2 years</option><option value="2 - 3 years">2 - 3 years</option><option value="3 - 5 years">3 - 5 years</option><option value="5+ years">5+ years</option></select></div>
-        <div class="f-group"><label>Preferred Market</label><select id="apply-market"><option value="">Select preference</option><option value="United Kingdom">United Kingdom</option><option value="Australia">Australia</option><option value="No preference">No preference</option></select></div>
-        <div class="f-group"><label>Tell us about yourself *</label><textarea id="apply-message" placeholder="Briefly describe your sales experience and why you want this role..." required></textarea></div>
+        <div class="f-group"><label>Email Address *</label><input type="email" name="Email Address" placeholder="your@email.com" required></div>
+        <div class="f-group"><label>Phone Number *</label><input type="tel" name="Phone Number" placeholder="+27 XX XXX XXXX" required></div>
+        <div class="f-group"><label>City / Province *</label><input type="text" name="City / Province" placeholder="e.g. Johannesburg, Gauteng" required></div>
+        <div class="f-group"><label>Years of Sales Experience *</label><select name="Years of Experience" required><option value="">Select experience level</option><option value="Less than 1 year">Less than 1 year</option><option value="1 - 2 years">1 - 2 years</option><option value="2 - 3 years">2 - 3 years</option><option value="3 - 5 years">3 - 5 years</option><option value="5+ years">5+ years</option></select></div>
+        <div class="f-group"><label>Preferred Market</label><select name="Preferred Market"><option value="">Select preference</option><option value="United Kingdom">United Kingdom</option><option value="Australia">Australia</option><option value="No preference">No preference</option></select></div>
+        <div class="f-group"><label>Tell us about yourself *</label><textarea name="About Themselves" placeholder="Briefly describe your sales experience and why you want this role..." required></textarea></div>
         <p class="f-note">By submitting you consent to Olyon Group processing your personal information for recruitment purposes in accordance with POPIA.</p>
         <button type="submit" class="btn-primary" style="width:100%;font-size:12px;">Submit Application</button>
         </form>
       </div>
  <div class="f-panel" id="f-enquiry">
-        <form id="enquiryForm" onsubmit="return submitToGoogleForms(this, 'enquiry');">
+        <form id="enquiryForm" onsubmit="return submitToSheet(this, 'enquiry');">
         <div class="f-row">
-          <div class="f-group"><label>Your Name *</label><input type="text" id="enquiry-name" placeholder="Full name" required></div>
-          <div class="f-group"><label>Company</label><input type="text" id="enquiry-company" placeholder="Your company name"></div>
+          <div class="f-group"><label>Your Name *</label><input type="text" name="Full Name" placeholder="Full name" required></div>
+          <div class="f-group"><label>Company</label><input type="text" name="Company" placeholder="Your company name"></div>
         </div>
-        <div class="f-group"><label>Email Address *</label><input type="email" id="enquiry-email" placeholder="your@email.com" required></div>
-        <div class="f-group"><label>Subject *</label><select id="enquiry-subject" required><option value="">Select a subject</option><option value="Company looking for staff">I am a company looking for SDR staff</option><option value="Candidate with question">I am a candidate with a question</option><option value="General enquiry">General enquiry</option></select></div>
-        <div class="f-group"><label>Message *</label><textarea id="enquiry-message" placeholder="How can we help you?" style="min-height:140px;" required></textarea></div>
+        <div class="f-group"><label>Email Address *</label><input type="email" name="Email Address" placeholder="your@email.com" required></div>
+        <div class="f-group"><label>Subject *</label><select name="Subject" required><option value="">Select a subject</option><option value="Company looking for staff">I am a company looking for SDR staff</option><option value="Candidate with question">I am a candidate with a question</option><option value="General enquiry">General enquiry</option></select></div>
+        <div class="f-group"><label>Message *</label><textarea name="Message" placeholder="How can we help you?" style="min-height:140px;" required></textarea></div>
         <p class="f-note">By submitting you consent to Olyon Group processing your personal information to respond to your enquiry in accordance with POPIA.</p>
         <button type="submit" class="btn-primary" style="width:100%;font-size:12px;">Send Message</button>
         </form>
@@ -931,14 +900,13 @@ STEP 5: Test
 </footer>
 </div>
 
-
-
 <script>
+// ====== CONFIG: YOUR GOOGLE APPS SCRIPT WEB APP URL ======
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbza9EAdKWQIvEcZt8BowbyC5cSP_hh_CKBBt0xRQX5YOp89m07zxCDu9VbJQU5OYr7C8g/exec';
+
 function showPage(name, tabEl) {
- // Close mobile menu if open
  document.querySelectorAll('.nav-links').forEach(menu => menu.classList.remove('mobile-open'));
  document.querySelectorAll('.mobile-menu-btn').forEach(btn => btn.classList.remove('active'));
-
  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
  document.querySelectorAll('.page-tab').forEach(t => t.classList.remove('active'));
  document.getElementById('page-' + name).classList.add('active');
@@ -953,13 +921,13 @@ function toggleMobileMenu(btn) {
  links.classList.toggle('mobile-open');
 }
 
-// Close mobile menu when clicking a link
 document.addEventListener('click', function(e) {
  if (e.target.closest('.nav-links.mobile-open a')) {
  document.querySelectorAll('.nav-links').forEach(menu => menu.classList.remove('mobile-open'));
  document.querySelectorAll('.mobile-menu-btn').forEach(btn => btn.classList.remove('active'));
  }
 });
+
 function switchTab(name) {
  document.querySelectorAll('.f-tab').forEach(t => t.classList.remove('active'));
  document.querySelectorAll('.f-panel').forEach(p => p.classList.remove('active'));
@@ -971,42 +939,49 @@ function switchTab(name) {
  document.getElementById('f-enquiry').classList.add('active');
  }
 }
-function submitToGoogleForms(form, type) {
+
+// ====== SUBMIT TO GOOGLE SHEETS VIA APPS SCRIPT ======
+function submitToSheet(form, type) {
   const btn = form.querySelector('button[type="submit"]');
   const originalText = btn.innerText;
   btn.innerText = 'Sending...';
   btn.disabled = true;
   btn.style.opacity = '0.7';
 
-  // Google Form submission URLs - REPLACE THESE WITH YOUR ACTUAL GOOGLE FORM URLs
-  const applyFormUrl = 'https://docs.google.com/forms/d/e/YOUR_APPLY_FORM_ID/formResponse';
-  const enquiryFormUrl = 'https://docs.google.com/forms/d/e/YOUR_ENQUIRY_FORM_ID/formResponse';
+  // Build form data
+  const formData = new FormData(form);
+  const params = new URLSearchParams();
+  
+  // Add all form fields
+  for (let [key, value] of formData.entries()) {
+    params.append(key, value);
+  }
+  // Add form type identifier
+  params.append('Form Type', type);
 
-  const formUrl = type === 'apply' ? applyFormUrl : enquiryFormUrl;
-
-  // Create iframe for submission (avoids CORS issues)
-  const iframe = document.createElement('iframe');
-  iframe.style.display = 'none';
-  iframe.name = 'googleFormTarget' + Date.now();
-  document.body.appendChild(iframe);
-
-  // Set form target to iframe
-  form.target = iframe.name;
-  form.action = formUrl;
-  form.method = 'POST';
-
-  // Show success after submission
-  setTimeout(function() {
+  // Submit via fetch (no-cors mode for cross-origin)
+  fetch(SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: params.toString()
+  })
+  .then(() => {
+    // Show success (no-cors prevents reading response, but request still goes through)
     const panel = form.closest('.f-panel');
-    panel.innerHTML = '<div style="text-align:center;padding:48px 0;"><div style="font-size:48px;margin-bottom:16px;">✅</div><h3 style="font-family:Cormorant Garamond,serif;font-size:26px;color:var(--white);margin-bottom:10px;">Thank You!</h3><p style="font-size:14px;color:var(--slate);">Your submission has been received and saved. Our team will respond within 48 business hours.</p></div>';
+    panel.innerHTML = '<div class="form-success"><div class="form-success-icon">✅</div><h3>Thank You!</h3><p>Your submission has been received and saved. Our team will respond within 48 business hours.</p></div>';
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    btn.innerText = 'Error. Try Again';
+    btn.disabled = false;
+    btn.style.opacity = '1';
+    alert('Something went wrong. Please try again or email us directly at staffing@olyongroup.com');
+  });
 
-    // Clean up iframe after delay
-    setTimeout(() => {
-      if (iframe.parentNode) iframe.parentNode.removeChild(iframe);
-    }, 5000);
-  }, 1500);
-
-  return true;
+  return false; // Prevent default form submission
 }
 </script>
 </body>
