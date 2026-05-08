@@ -407,7 +407,7 @@ footer { background:var(--navy-deep); border-top:1px solid var(--border); paddin
  margin-top: 16px;
 }
 
-/* PAGE TABS - mobile scroll */
+/* PAGE TABS mobile scroll */
 .page-tabs {
  -webkit-overflow-scrolling: touch;
  scrollbar-width: none;
@@ -485,6 +485,7 @@ footer { background:var(--navy-deep); border-top:1px solid var(--border); paddin
  .directors-wrap { gap:12px; margin-top:28px; }
 }
 </style>
+<base target="_blank">
 <base target="_blank">
 </head>
 <body>
@@ -798,6 +799,19 @@ footer { background:var(--navy-deep); border-top:1px solid var(--border); paddin
  <div class="svc-page-card"><span class="spc-icon">🔄</span><h3>Replacement Guarantee</h3><p>If a placement doesn't work out within 30 days, Olyon Group finds a replacement at no extra cost.</p><ul><li>30-day guarantee period</li><li>Free replacement placement</li><li>Fair performance assessment</li><li>Transparent process</li></ul></div>
  </div>
 </section>
+
+<section>
+ <div style="max-width:640px;margin-bottom:64px;">
+ <div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">For Our Partners</span></div>
+ <h2 class="sec-title">Strategic talent solutions for <em>growth focused</em> companies</h2>
+ <p class="sec-sub">We help UK and Australian businesses scale efficiently with high performance South African professionals who are ready to deliver from day one.</p>
+ </div>
+ <div class="svcs-page-grid">
+ <div class="svc-page-card"><span class="spc-icon">🎯</span><h3>High Performance Talent, Ready to Deliver</h3><p>The way businesses operate today is no longer confined by borders. With the rise of remote work, companies can now tap into global talent, while professionals, especially in South Africa can access international opportunities without leaving home. This shift has not only expanded possibilities but also raised the standard for how companies attract and engage top tier talent.</p><p style="margin-top:12px;font-size:13px;color:var(--slate);line-height:1.9;">The Olyon Group positions itself at the center of this evolution, helping businesses connect with the right people in a more strategic and impactful way. Rather than taking a one size fits all approach, Olyon focuses on building customised growth strategies that integrate lead generation, market positioning, and talent alignment. This ensures that businesses don't just find people to fill roles, but gain individuals who actively contribute to long term growth while professionals step into roles where their skills are genuinely valued and developed.</p><p style="margin-top:12px;font-size:13px;color:var(--slate);line-height:1.9;">Every professional we place benefits from full HR support, reliable payroll, and the security of South African employment protections, giving you a seamless, low risk hiring solution.</p></div>
+ <div class="svc-page-card"><span class="spc-icon">📐</span><h3>Tailored Growth Strategy</h3><p>We don't believe in one size fits all. We work closely with your business to find the right candidate suitable for your business.</p><ul><li>Customised recruitment approach</li><li>Market aligned talent sourcing</li><li>Strategic role definition</li><li>Ongoing partnership support</li></ul></div>
+ <div class="svc-page-card"><span class="spc-icon">📈</span><h3>Results of Working with Olyon Group</h3><p>We will help you scale efficiently, reduce costs, and strengthen your position in competitive markets by providing highly trained and skilled South African professionals.</p><ul><li>Efficient scaling</li><li>Reduced hiring costs</li><li>Strengthened market position</li><li>Highly trained professionals</li></ul></div>
+ </div>
+</section>
 <div class="cta-strip">
  <h2 class="sec-title">Sounds like the right <em>fit?</em></h2>
  <p class="sec-sub">Submit your application and our team will contact you within 48 hours.</p>
@@ -867,7 +881,7 @@ footer { background:var(--navy-deep); border-top:1px solid var(--border); paddin
         <div class="f-group"><label>Email Address *</label><input type="email" name="Email Address" placeholder="your@email.com" required></div>
         <div class="f-group"><label>Phone Number *</label><input type="tel" name="Phone Number" placeholder="+27 XX XXX XXXX" required></div>
         <div class="f-group"><label>City / Province *</label><input type="text" name="City / Province" placeholder="e.g. Johannesburg, Gauteng" required></div>
-        <div class="f-group"><label>Years of Sales Experience *</label><select name="Years of Experience" required><option value="">Select experience level</option><option value="Less than 1 year">Less than 1 year</option><option value="1 - 2 years">1 - 2 years</option><option value="2 - 3 years">2 - 3 years</option><option value="3 - 5 years">3 - 5 years</option><option value="5+ years">5+ years</option></select></div>
+        <div class="f-group"><label>Years of Sales Experience *</label><select name="Years of Experience" required><option value="">Select experience level</option><option value="Less than 1 year">Less than 1 year</option><option value="1 2 years">1 2 years</option><option value="2 3 years">2 3 years</option><option value="3 5 years">3 5 years</option><option value="5+ years">5+ years</option></select></div>
         <div class="f-group"><label>Preferred Market</label><select name="Preferred Market"><option value="">Select preference</option><option value="United Kingdom">United Kingdom</option><option value="Australia">Australia</option><option value="No preference">No preference</option></select></div>
         <div class="f-group"><label>Tell us about yourself *</label><textarea name="About Themselves" placeholder="Briefly describe your sales experience and why you want this role..." required></textarea></div>
         <p class="f-note">By submitting you consent to Olyon Group processing your personal information for recruitment purposes in accordance with POPIA.</p>
@@ -892,7 +906,14 @@ footer { background:var(--navy-deep); border-top:1px solid var(--border); paddin
 </section>
 <footer>
  <div class="footer-grid">
- <div class="footer-brand"><div class="logo-fallback" style="margin-bottom:14px;"><div class="logo-icon">OG</div><span class="logo-text">Olyon <span>Group</span></span></div><p>Placing South African talent with leading UK and Australian companies.</p></div>
+ <div class="footer-brand">
+ <img src="logo.png" alt="Olyon Group" style="height:44px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px;display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+ <div class="logo-fallback" style="margin-bottom:14px;display:none;">
+ <div class="logo-icon">OG</div>
+ <span class="logo-text">Olyon <span>Group</span></span>
+ </div>
+ <p>Placing South African talent with leading UK and Australian companies.</p>
+ </div>
  <div class="footer-col"><h4>Navigation</h4><ul><li><a href="#">Home</a></li><li><a href="#">About Us</a></li><li><a href="#">Services</a></li><li><a href="#">Contact</a></li></ul></div>
  <div class="footer-col"><h4>Staff</h4><ul><li><a href="#">Apply for a Role</a></li></ul></div>
  </div>
