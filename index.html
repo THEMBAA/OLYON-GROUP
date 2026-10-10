@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Olyon Group Preview</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Olyon Group | South African Talent, Global Careers</title>
+<meta content="Olyon Group connects South African professionals with remote and international career opportunities." name="description"/>
+<meta content="#071828" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {
  --navy: #0A2342;
@@ -484,519 +487,430 @@ footer { background:var(--navy-deep); border-top:1px solid var(--border); paddin
  .director-title { font-size:9px; }
  .directors-wrap { gap:12px; margin-top:28px; }
 }
-</style>
-<base target="_blank">
-<base target="_blank">
-</head>
-<body>
 
+/* Consistent monochrome footer identity and address glyphs */
+.footer-brand > svg, .footer-brand > svg * { fill:#fff !important; stroke:none; }
+.footer-contact-line{display:flex;align-items:center;gap:9px;margin-top:9px;font-size:12px;color:var(--slate);line-height:1.6}
+.footer-contact-line svg{width:15px;height:15px;flex:none;fill:var(--gold)}
+</style>
+<style>
+/* Responsive refinement */
+:root{--ease:cubic-bezier(.22,1,.36,1)}
+html{scroll-padding-top:110px}body{min-width:320px}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px}
+.page.active{animation:pageEnter .55s var(--ease) both}@keyframes pageEnter{from{opacity:.35;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero-content,.ph-content{animation:riseIn .85s var(--ease) both}@keyframes riseIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.step-card,.svc-card,.svc-page-card,.director-card,.val-item{transition:transform .35s var(--ease),border-color .35s,box-shadow .35s}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}.reveal.is-visible{opacity:1;transform:none}
+.page-tabs{justify-content:center;min-height:49px}.page-tab{min-height:49px}.nav-logo-img{max-width:min(230px,48vw);object-fit:contain}nav{min-height:88px}.hero{min-height:min(820px,95svh)}.hero-content{max-width:690px}.hero-sub{color:#b8c4d4}.sec-sub,.svc-card p,.svc-page-card p,.step-card p,.about-text p,.director-bio{color:#b6c4d7}
+.f-group input,.f-group select,.f-group textarea{font-size:16px;min-height:48px}.f-group textarea{min-height:120px}.btn-primary,.btn-outline{min-height:46px}.form-status{margin-top:16px;line-height:1.6;font-size:13px;color:var(--gold-light)}
+@media(max-width:900px){.page-tabs{justify-content:flex-start}nav{top:49px;min-height:76px}.nav-logo-img{height:58px}.mobile-menu-btn{border:1px solid var(--border);background:transparent;border-radius:3px;min-width:44px;min-height:44px;align-items:center;justify-content:center}.nav-links.mobile-open{position:fixed;top:125px;bottom:0;max-height:calc(100dvh - 125px);overflow-y:auto;z-index:999;background:#071828f7}.hero{min-height:calc(100svh - 125px);padding-top:72px}.hero-scroll{left:24px;bottom:22px}.hero h1{font-size:clamp(43px,9vw,74px)}.contact-layout,.about-intro{gap:34px}}
+@media(max-width:600px){.page-tab{padding:14px 17px;font-size:11px}.hero{padding:76px 22px 85px;align-items:center}.hero h1{font-size:clamp(41px,11vw,62px)}.hero-sub{font-size:15px;line-height:1.7}.hero-actions{gap:12px}.hero-actions a{width:100%;text-align:center}.hero-scroll{display:none}section{padding:64px 22px}.page-hero{min-height:290px;padding:80px 22px 48px}.form-box{padding:28px 20px}.f-tab{padding:12px 10px;font-size:11px;flex:1}.footer-grid{grid-template-columns:1fr;gap:30px}footer{padding:48px 22px 24px}.cta-strip{padding:68px 22px}.step-card,.svc-card,.svc-page-card{padding:30px 24px}.sec-title{font-size:clamp(33px,9vw,46px)}.director-card{flex-direction:row;align-items:flex-start}.director-avatar{flex-shrink:0}.contact-info h2{font-size:33px}}
+@media(hover:none){.step-card:hover,.svc-card:hover,.svc-page-card:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style><style>
+.brand-svg{display:block;width:clamp(145px,17vw,205px);height:auto;max-height:84px;overflow:visible;transition:transform .35s ease,filter .35s ease}
+.nav-logo:hover .brand-svg{transform:translateY(-1px);filter:drop-shadow(0 3px 14px rgba(201,168,76,.19))}
+.footer-brand>svg{display:block;width:190px;max-width:100%;height:auto;margin-bottom:12px}
+.nav-logo{flex-shrink:0}nav{gap:18px}
+@media(max-width:900px){.brand-svg{width:150px;max-height:65px}}
+@media(max-width:380px){.brand-svg{width:132px}}
+</style><style>
+/* Single, logo-aligned navigation and monochrome brand mark */
+nav{top:0!important} .brand-svg path,.brand-svg text{fill:#fff!important} .director-avatar{border-radius:50%!important} .svc-icon,.spc-icon,.c-icon{color:var(--gold);line-height:1} .svc-icon svg,.spc-icon svg,.c-icon svg{display:block;fill:currentColor} .c-icon svg{width:19px;height:19px} .nav-links.mobile-open{top:76px!important;max-height:calc(100dvh - 76px)!important} @media(max-width:900px){nav{top:0!important}.hero{min-height:calc(100svh - 76px)}}
+</style></head>
+<body>
 <!-- PAGE TABS -->
-<div class="page-tabs">
- <button class="page-tab active" onclick="showPage('home',this)">🏠 Home</button>
- <button class="page-tab" onclick="showPage('about',this)">About</button>
- <button class="page-tab" onclick="showPage('services',this)">Services</button>
- <button class="page-tab" onclick="showPage('contact',this)">Contact</button>
- </div>
 
 <!-- ═══════════ HOME ═══════════ -->
 <div class="page active" id="page-home">
 <nav>
- <a href="#" class="nav-logo">
- <img src="logo.png" alt="Olyon Group" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
- <div class="logo-fallback" style="display:none;">
- <div class="logo-icon">OG</div>
- <span class="logo-text">Olyon <span>Group</span></span>
- </div>
- </a>
- <div class="mobile-menu-btn" onclick="toggleMobileMenu(this)">
- <span></span><span></span><span></span>
- </div>
- <ul class="nav-links">
- <li><a href="#" class="active">Home</a></li>
- <li><a href="#" onclick="showPage('about',document.querySelectorAll('.page-tab')[1]);return false;">About</a></li>
- <li><a href="#" onclick="showPage('services',document.querySelectorAll('.page-tab')[2]);return false;">Services</a></li>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;">Contact</a></li>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;" class="nav-cta">Apply Now</a></li>
- </ul>
+<a class="nav-logo" href="#home" onclick="showPage('home');return false;"><svg aria-label="Olyon Group" class="brand-svg" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg"><g transform="translate(68 8)"><path d="M432,125 L431,136 L426,152 L418,166 L406,180 L391,192 L373,201 L358,205 L351,205 L350,206 L345,206 L344,205 L345,203 L355,199 L369,190 L385,174 L396,156 L402,136 L401,135 L400,136 L399,135 L394,135 L393,136 L356,136 L354,134 L354,125 L355,124 L431,124Z M332,55 L341,48 L356,41 L371,37 L382,37 L390,41 L400,48 L416,65 L423,77 L422,78 L391,78 L382,69 L369,61 L353,56 L346,56 L345,55 L333,56Z M94,59 L106,48 L124,38 L144,33 L152,33 L158,35 L172,43 L187,56 L301,166 L315,174 L334,179 L348,179 L349,178 L358,177 L367,173 L369,174 L361,182 L347,192 L329,200 L314,202 L302,198 L294,194 L282,185 L162,68 L151,61 L132,55 L112,55 L100,58 L95,61Z M119,28 L120,29 L119,31 L109,34 L91,46 L79,58 L73,66 L67,76 L60,94 L57,115 L58,116 L58,126 L62,140 L67,150 L74,159 L85,168 L96,174 L112,178 L129,178 L130,179 L121,186 L111,191 L97,195 L81,196 L76,194 L61,184 L51,174 L40,158 L34,145 L30,128 L30,102 L31,101 L31,97 L34,86 L41,71 L50,59 L61,48 L74,39 L89,32 L101,29Z M241,75 L249,83 L287,47 L299,39 L312,33 L326,29 L349,28 L357,30 L355,32 L348,33 L335,39 L321,49 L269,99 L268,103 L276,109 L295,90 L310,77 L320,71 L333,67 L351,67 L363,71 L373,77 L384,89 L440,89 L438,81 L434,72 L432,70 L431,66 L424,56 L411,42 L397,32 L382,24 L370,20 L362,19 L361,18 L355,18 L354,17 L330,17 L329,18 L324,18 L306,23 L293,29 L277,40Z M18,101 L18,129 L19,130 L19,135 L21,143 L27,159 L38,177 L49,189 L68,203 L88,212 L95,213 L99,215 L111,216 L112,217 L128,217 L129,216 L142,215 L162,209 L176,202 L192,190 L220,163 L222,159 L214,152 L177,187 L166,194 L153,200 L140,204 L128,205 L127,206 L106,205 L105,204 L106,202 L117,200 L127,195 L139,187 L175,154 L195,133 L188,126 L186,126 L157,154 L149,160 L135,166 L114,167 L103,164 L93,159 L81,148 L76,141 L71,129 L69,113 L70,112 L71,101 L75,92 L80,85 L91,75 L105,68 L114,67 L115,66 L128,66 L140,69 L151,75 L173,95 L182,105 L274,194 L280,199 L298,209 L317,215 L330,216 L331,217 L359,216 L383,209 L403,198 L418,185 L429,171 L438,154 L444,130 L444,112 L443,113 L344,113 L343,112 L342,113 L342,146 L382,146 L383,147 L372,158 L359,165 L348,168 L335,168 L334,167 L326,166 L315,161 L305,154 L272,121 L244,95 L240,90 L185,38 L175,31 L161,24 L144,19 L133,18 L132,17 L106,17 L105,18 L94,19 L74,26 L60,34 L52,40 L40,52 L31,64 L31,66 L29,68 L22,84Z" fill="#FFFFFF" fill-rule="evenodd"></path></g><text fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="54" letter-spacing="1" text-anchor="middle" x="300" y="306"><tspan font-weight="700">OLYON</tspan><tspan font-weight="300"> GROUP</tspan></text></svg></a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="mobile-menu-btn" onclick="toggleMobileMenu(this)" type="button">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-links">
+<li><a class="active" href="#home" onclick="showPage('home');return false;">Home</a></li>
+<li><a href="#about" onclick="showPage('about');return false;">About</a></li>
+<li><a href="#services" onclick="showPage('services');return false;">Services</a></li>
+<li><a href="#contact" onclick="showPage('contact');return false;">Contact</a></li>
+<li><a class="nav-cta" href="#contact" onclick="showPage('contact');return false;">Apply Now</a></li>
+</ul>
 </nav>
-
 <div class="hero">
- <div class="hero-bg"></div>
- <div class="hero-grid"></div>
- <div class="hero-content">
- <div class="eyebrow">
- <div class="eyebrow-line"></div>
- <span class="eyebrow-text">South African Talent • Global Career</span>
- </div>
- <h1>Your Career.<br><em>Global Reach.</em><br>From South Africa.</h1>
- <p class="hero-sub">Olyon Group connects South African talent with global market opportunities — whether working remotely from home or relocating abroad with structured visa and travel support.</p>
- <div class="hero-actions">
- <a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;" class="btn-primary">Apply for a Role</a>
- <a href="#" onclick="showPage('services',document.querySelectorAll('.page-tab')[2]);return false;" class="btn-outline">How It Works</a>
- </div>
- </div>
- <div class="hero-visual">
- <div class="hero-visual-inner">
- <div class="hero-card">
- <h3>Career Placement</h3>
- <p>Work with UK & Australian companies from South Africa, earning competitive international-grade salaries.</p>
- <span class="hero-tag">Now Hiring</span>
- </div>
- </div>
- </div>
- <div class="hero-scroll">
- <div class="scroll-line"></div>
- <span class="scroll-text">Scroll</span>
- </div>
+<div class="hero-bg"></div>
+<div class="hero-grid"></div>
+<div class="hero-content">
+<div class="eyebrow">
+<div class="eyebrow-line"></div>
+<span class="eyebrow-text">South African Talent • Global Career</span>
 </div>
-
+<h1>Your Career.<br/><em>Global Reach.</em><br/>From South Africa.</h1>
+<p class="hero-sub">Olyon Group connects South African talent with global market opportunities — whether working remotely from home or relocating abroad with structured visa and travel support.</p>
+<div class="hero-actions">
+<a class="btn-primary" contact\"]'));return="" false;"="" href="#contact" onclick="showPage('contact',document.querySelector('[data-page=\">Apply for a Role</a>
+<a class="btn-outline" false;"="" href="#services" onclick="showPage('services',document.querySelector('[data-page=\" services\"]'));return="">How It Works</a>
+</div>
+</div>
+<div class="hero-visual">
+<div class="hero-visual-inner">
+<div class="hero-card">
+<h3>Career Placement</h3>
+<p>Work with UK &amp; Australian companies from South Africa, earning competitive international-grade salaries.</p>
+<span class="hero-tag">Now Hiring</span>
+</div>
+</div>
+</div>
+<div class="hero-scroll">
+<div class="scroll-line"></div>
+<span class="scroll-text">Scroll</span>
+</div>
+</div>
 <section class="steps-bg">
- <div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">The Process</span></div>
- <h2 class="sec-title">How <em>it works</em></h2>
- <p class="sec-sub">We match candidates with international employers across two distinct, fully supported career paths.</p>
- <div class="steps-grid">
- <div class="step-card">
- <div class="step-num">01</div>
- <h3>Apply Online</h3>
- <p>Submit your profile and select your preference: Remote Work, International Relocation, or Open to Both.</p>
- </div>
- <div class="step-card">
- <div class="step-num">02</div>
- <h3>Screening & Assessment</h3>
- <p>Our recruiters assess your domain expertise, English fluency, and suitability for international placements.</p>
- </div>
- <div class="step-card">
- <div class="step-num">03</div>
- <h3>Match & Interview</h3>
- <p>We align you with international companies offering competitive salary packages and sponsorship terms.</p>
- </div>
- <div class="step-card">
- <div class="step-num">04</div>
- <h3>Onboarding or Mobility</h3>
- <p>Begin your remote tenure or receive step-by-step guidance through visa sponsorship and travel logistics.</p>
- </div>
- </div>
-</section>
-
-<section>
- <div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">What We Offer</span></div>
- <h2 class="sec-title">Two pathways to <em>elevate</em><br>your career</h2>
- <div class="services-grid">
- <div class="svc-card">
- <span class="svc-icon">💻</span>
- <h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:24px; margin-bottom:14px;">Remote Career Placement</h3>
- <p>Work for top-tier international companies directly from South Africa. Earn foreign-market benchmarked packages with direct HR, tax, and local support managed smoothly by Olyon Group.</p>
- </div>
- <div class="svc-card">
- <span class="svc-icon">✈️</span>
- <h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:24px; margin-bottom:14px;">International Relocation Placement</h3>
- <p>Relocate directly to host countries with vetted employer sponsors. Every abroad role clearly specifies visa sponsorship coverage, travel expense arrangements, and relocation allowances up front.</p>
- </div>
- <div class="svc-card">
- <span class="svc-icon">📜</span>
- <h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:24px; margin-bottom:14px;">Transparent Visa & Travel Details</h3>
- <p>No hidden costs or unexpected obstacles. We provide total clarity on sponsorship fees, work permits, flight coverage, and arrival setup before you attend an interview.</p>
- </div>
- <div class="svc-card">
- <span class="svc-icon">🛡️</span>
- <h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:24px; margin-bottom:14px;">End-to-End Advocacy</h3>
- <p>From contract verification to local payroll compliance and global mobility support, Olyon Group ensures your career transition is safe, legally compliant, and rewarding.</p>
- </div>
- </div>
-</section>
-
-<div class="cta-strip">
- <div class="sec-eyebrow" style="justify-content:center;"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">Ready to Start?</span><div class="sec-eyebrow-line"></div></div>
- <h2 class="sec-title">Start your <em>international</em><br>career today</h2>
- <p class="sec-sub">Submit your application and our team will be in touch within 48 hours.</p>
- <a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;" class="btn-primary" style="margin-top:40px;display:inline-block;">Apply for a Role</a>
+<div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">The Process</span></div>
+<h2 class="sec-title">How <em>it works</em></h2>
+<p class="sec-sub">We match candidates with international employers across two distinct, fully supported career paths.</p>
+<div class="steps-grid">
+<div class="step-card">
+<div class="step-num">01</div>
+<h3>Apply Online</h3>
+<p>Submit your profile and select your preference: Remote Work, International Relocation, or Open to Both.</p>
 </div>
-
+<div class="step-card">
+<div class="step-num">02</div>
+<h3>Screening &amp; Assessment</h3>
+<p>Our recruiters assess your domain expertise, English fluency, and suitability for international placements.</p>
+</div>
+<div class="step-card">
+<div class="step-num">03</div>
+<h3>Match &amp; Interview</h3>
+<p>We align you with international companies offering competitive salary packages and sponsorship terms.</p>
+</div>
+<div class="step-card">
+<div class="step-num">04</div>
+<h3>Onboarding or Mobility</h3>
+<p>Begin your remote tenure or receive step-by-step guidance through visa sponsorship and travel logistics.</p>
+</div>
+</div>
+</section>
+<section>
+<div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">What We Offer</span></div>
+<h2 class="sec-title">Two pathways to <em>elevate</em><br/>your career</h2>
+<div class="services-grid">
+<div class="svc-card">
+<span class="svc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><rect height="13" rx="1.5" width="18" x="3" y="4"></rect><path d="M1 19h22v2H1z"></path></svg></span>
+<h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:24px; margin-bottom:14px;">Remote Career Placement</h3>
+<p>Work for top-tier international companies directly from South Africa. Earn foreign-market benchmarked packages with direct HR, tax, and local support managed smoothly by Olyon Group.</p>
+</div>
+<div class="svc-card">
+<span class="svc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M22 2 2 10l8 3 3 8 9-19ZM10 13l4-4-1 8-3-4Z"></path></svg></span>
+<h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:24px; margin-bottom:14px;">International Relocation Placement</h3>
+<p>Relocate directly to host countries with vetted employer sponsors. Every abroad role clearly specifies visa sponsorship coverage, travel expense arrangements, and relocation allowances up front.</p>
+</div>
+<div class="svc-card">
+<span class="svc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M6 2h13v15a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4h5V2Zm3 5v2h7V7Zm0 4v2h7v-2Z"></path></svg></span>
+<h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:24px; margin-bottom:14px;">Transparent Visa &amp; Travel Details</h3>
+<p>No hidden costs or unexpected obstacles. We provide total clarity on sponsorship fees, work permits, flight coverage, and arrival setup before you attend an interview.</p>
+</div>
+<div class="svc-card">
+<span class="svc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M12 1 3 5v6c0 6 4 10 9 12 5-2 9-6 9-12V5l-9-4Zm-1 15-4-4 1.5-1.5L11 13l5-5 1.5 1.5-6.5 6.5Z"></path></svg></span>
+<h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:24px; margin-bottom:14px;">End-to-End Advocacy</h3>
+<p>From contract verification to local payroll compliance and global mobility support, Olyon Group ensures your career transition is safe, legally compliant, and rewarding.</p>
+</div>
+</div>
+</section>
+<div class="cta-strip">
+<div class="sec-eyebrow" style="justify-content:center;"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">Ready to Start?</span><div class="sec-eyebrow-line"></div></div>
+<h2 class="sec-title">Start your <em>international</em><br/>career today</h2>
+<p class="sec-sub">Submit your application and our team will be in touch within 48 hours.</p>
+<a class="btn-primary" contact\"]'));return="" false;"="" href="#contact" onclick="showPage('contact',document.querySelector('[data-page=\" style="margin-top:40px;display:inline-block;">Apply for a Role</a>
+</div>
 <footer>
- <div class="footer-grid">
- <div class="footer-brand">
- <img src="logo.png" alt="Olyon Group" style="height:90px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px;display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
- <div class="logo-fallback" style="margin-bottom:14px;display:none;">
- <div class="logo-icon">OG</div>
- <span class="logo-text">Olyon <span>Group</span></span>
- </div>
- <p>Placing South African talent with leading internationl companies. Your international career starts here.</p>
- <p style="margin-top:14px;font-size:12px;color:var(--slate);">📍 Sandton, Johannesburg, 2196<br>✉️ staffing@olyongroup.com</p>
- </div>
- <div class="footer-col">
- <h4>Navigation</h4>
- <ul>
- <li><a href="#">Home</a></li>
- <li><a href="#" onclick="showPage('about',document.querySelectorAll('.page-tab')[1]);return false;">About Us</a></li>
- <li><a href="#" onclick="showPage('services',document.querySelectorAll('.page-tab')[2]);return false;">Services</a></li>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;">Contact</a></li>
- </ul>
- </div>
- <div class="footer-col">
- <h4>Staff</h4>
- <ul>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;">Apply for a Role</a></li>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;">Client Enquiry</a></li>
- </ul>
- </div>
- </div>
- <div class="footer-bottom">
- <p>© 2026 <span>Olyon Group (Pty) Ltd</span>. All rights reserved.</p>
- <p>Sandton, Johannesburg, 2196, South Africa</p>
- </div>
+<div class="footer-grid">
+<div class="footer-brand">
+<svg aria-label="Olyon Group" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg"><g transform="translate(68 8)"><path d="M432,125 L431,136 L426,152 L418,166 L406,180 L391,192 L373,201 L358,205 L351,205 L350,206 L345,206 L344,205 L345,203 L355,199 L369,190 L385,174 L396,156 L402,136 L401,135 L400,136 L399,135 L394,135 L393,136 L356,136 L354,134 L354,125 L355,124 L431,124Z M332,55 L341,48 L356,41 L371,37 L382,37 L390,41 L400,48 L416,65 L423,77 L422,78 L391,78 L382,69 L369,61 L353,56 L346,56 L345,55 L333,56Z M94,59 L106,48 L124,38 L144,33 L152,33 L158,35 L172,43 L187,56 L301,166 L315,174 L334,179 L348,179 L349,178 L358,177 L367,173 L369,174 L361,182 L347,192 L329,200 L314,202 L302,198 L294,194 L282,185 L162,68 L151,61 L132,55 L112,55 L100,58 L95,61Z M119,28 L120,29 L119,31 L109,34 L91,46 L79,58 L73,66 L67,76 L60,94 L57,115 L58,116 L58,126 L62,140 L67,150 L74,159 L85,168 L96,174 L112,178 L129,178 L130,179 L121,186 L111,191 L97,195 L81,196 L76,194 L61,184 L51,174 L40,158 L34,145 L30,128 L30,102 L31,101 L31,97 L34,86 L41,71 L50,59 L61,48 L74,39 L89,32 L101,29Z M241,75 L249,83 L287,47 L299,39 L312,33 L326,29 L349,28 L357,30 L355,32 L348,33 L335,39 L321,49 L269,99 L268,103 L276,109 L295,90 L310,77 L320,71 L333,67 L351,67 L363,71 L373,77 L384,89 L440,89 L438,81 L434,72 L432,70 L431,66 L424,56 L411,42 L397,32 L382,24 L370,20 L362,19 L361,18 L355,18 L354,17 L330,17 L329,18 L324,18 L306,23 L293,29 L277,40Z M18,101 L18,129 L19,130 L19,135 L21,143 L27,159 L38,177 L49,189 L68,203 L88,212 L95,213 L99,215 L111,216 L112,217 L128,217 L129,216 L142,215 L162,209 L176,202 L192,190 L220,163 L222,159 L214,152 L177,187 L166,194 L153,200 L140,204 L128,205 L127,206 L106,205 L105,204 L106,202 L117,200 L127,195 L139,187 L175,154 L195,133 L188,126 L186,126 L157,154 L149,160 L135,166 L114,167 L103,164 L93,159 L81,148 L76,141 L71,129 L69,113 L70,112 L71,101 L75,92 L80,85 L91,75 L105,68 L114,67 L115,66 L128,66 L140,69 L151,75 L173,95 L182,105 L274,194 L280,199 L298,209 L317,215 L330,216 L331,217 L359,216 L383,209 L403,198 L418,185 L429,171 L438,154 L444,130 L444,112 L443,113 L344,113 L343,112 L342,113 L342,146 L382,146 L383,147 L372,158 L359,165 L348,168 L335,168 L334,167 L326,166 L315,161 L305,154 L272,121 L244,95 L240,90 L185,38 L175,31 L161,24 L144,19 L133,18 L132,17 L106,17 L105,18 L94,19 L74,26 L60,34 L52,40 L40,52 L31,64 L31,66 L29,68 L22,84Z" fill="#C9A84C" fill-rule="evenodd"></path></g><text fill="#F3F5F8" font-family="Arial,Helvetica,sans-serif" font-size="54" letter-spacing="1" text-anchor="middle" x="300" y="306"><tspan font-weight="700">OLYON</tspan><tspan font-weight="300"> GROUP</tspan></text></svg>
+<p>Placing South African talent with leading internationl companies. Your international career starts here.</p>
+<div class="footer-contact-line"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.3 8 12 8 12s8-6.7 8-12a8 8 0 0 0-8-8zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" fill-rule="evenodd"/></svg><span>Sandton, Johannesburg, 2196</span></div><div class="footer-contact-line"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 3v1l9 6 9-6V8l-9 6z" fill-rule="evenodd"/></svg><span>staffing@olyongroup.com</span></div>
+</div>
+<div class="footer-col">
+<h4>Navigation</h4>
+<ul>
+<li><a href="#home" onclick="showPage('home');return false;">Home</a></li>
+<li><a about\"]'));return="" false;"="" href="#about" onclick="showPage('about',document.querySelector('[data-page=\">About Us</a></li>
+<li><a false;"="" href="#services" onclick="showPage('services',document.querySelector('[data-page=\" services\"]'));return="">Services</a></li>
+<li><a contact\"]'));return="" false;"="" href="#contact" onclick="showPage('contact',document.querySelector('[data-page=\">Contact</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Staff</h4>
+<ul>
+<li><a contact\"]'));return="" false;"="" href="#contact" onclick="showPage('contact',document.querySelector('[data-page=\">Apply for a Role</a></li>
+<li><a contact\"]'));return="" false;"="" href="#contact" onclick="showPage('contact',document.querySelector('[data-page=\">Client Enquiry</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 <span>Olyon Group (Pty) Ltd</span>. All rights reserved.</p>
+<p>Sandton, Johannesburg, 2196, South Africa</p>
+</div>
 </footer>
 </div>
-
 <!-- ═══════════ ABOUT ═══════════ -->
 <div class="page" id="page-about">
 <nav>
- <a href="#" onclick="showPage('home',document.querySelectorAll('.page-tab')[0]);return false;" class="nav-logo">
- <img src="logo.png" alt="Olyon Group" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
- <div class="logo-fallback" style="display:none;">
- <div class="logo-icon">OG</div>
- <span class="logo-text">Olyon <span>Group</span></span>
- </div>
- </a>
- <div class="mobile-menu-btn" onclick="toggleMobileMenu(this)">
- <span></span><span></span><span></span>
- </div>
- <ul class="nav-links">
- <li><a href="#" onclick="showPage('home',document.querySelectorAll('.page-tab')[0]);return false;">Home</a></li>
- <li><a href="#" class="active">About</a></li>
- <li><a href="#" onclick="showPage('services',document.querySelectorAll('.page-tab')[2]);return false;">Services</a></li>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;">Contact</a></li>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;" class="nav-cta">Apply Now</a></li>
- </ul>
+<a class="nav-logo" href="#home" onclick="showPage('home');return false;"><svg aria-label="Olyon Group" class="brand-svg" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg"><g transform="translate(68 8)"><path d="M432,125 L431,136 L426,152 L418,166 L406,180 L391,192 L373,201 L358,205 L351,205 L350,206 L345,206 L344,205 L345,203 L355,199 L369,190 L385,174 L396,156 L402,136 L401,135 L400,136 L399,135 L394,135 L393,136 L356,136 L354,134 L354,125 L355,124 L431,124Z M332,55 L341,48 L356,41 L371,37 L382,37 L390,41 L400,48 L416,65 L423,77 L422,78 L391,78 L382,69 L369,61 L353,56 L346,56 L345,55 L333,56Z M94,59 L106,48 L124,38 L144,33 L152,33 L158,35 L172,43 L187,56 L301,166 L315,174 L334,179 L348,179 L349,178 L358,177 L367,173 L369,174 L361,182 L347,192 L329,200 L314,202 L302,198 L294,194 L282,185 L162,68 L151,61 L132,55 L112,55 L100,58 L95,61Z M119,28 L120,29 L119,31 L109,34 L91,46 L79,58 L73,66 L67,76 L60,94 L57,115 L58,116 L58,126 L62,140 L67,150 L74,159 L85,168 L96,174 L112,178 L129,178 L130,179 L121,186 L111,191 L97,195 L81,196 L76,194 L61,184 L51,174 L40,158 L34,145 L30,128 L30,102 L31,101 L31,97 L34,86 L41,71 L50,59 L61,48 L74,39 L89,32 L101,29Z M241,75 L249,83 L287,47 L299,39 L312,33 L326,29 L349,28 L357,30 L355,32 L348,33 L335,39 L321,49 L269,99 L268,103 L276,109 L295,90 L310,77 L320,71 L333,67 L351,67 L363,71 L373,77 L384,89 L440,89 L438,81 L434,72 L432,70 L431,66 L424,56 L411,42 L397,32 L382,24 L370,20 L362,19 L361,18 L355,18 L354,17 L330,17 L329,18 L324,18 L306,23 L293,29 L277,40Z M18,101 L18,129 L19,130 L19,135 L21,143 L27,159 L38,177 L49,189 L68,203 L88,212 L95,213 L99,215 L111,216 L112,217 L128,217 L129,216 L142,215 L162,209 L176,202 L192,190 L220,163 L222,159 L214,152 L177,187 L166,194 L153,200 L140,204 L128,205 L127,206 L106,205 L105,204 L106,202 L117,200 L127,195 L139,187 L175,154 L195,133 L188,126 L186,126 L157,154 L149,160 L135,166 L114,167 L103,164 L93,159 L81,148 L76,141 L71,129 L69,113 L70,112 L71,101 L75,92 L80,85 L91,75 L105,68 L114,67 L115,66 L128,66 L140,69 L151,75 L173,95 L182,105 L274,194 L280,199 L298,209 L317,215 L330,216 L331,217 L359,216 L383,209 L403,198 L418,185 L429,171 L438,154 L444,130 L444,112 L443,113 L344,113 L343,112 L342,113 L342,146 L382,146 L383,147 L372,158 L359,165 L348,168 L335,168 L334,167 L326,166 L315,161 L305,154 L272,121 L244,95 L240,90 L185,38 L175,31 L161,24 L144,19 L133,18 L132,17 L106,17 L105,18 L94,19 L74,26 L60,34 L52,40 L40,52 L31,64 L31,66 L29,68 L22,84Z" fill="#FFFFFF" fill-rule="evenodd"></path></g><text fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="54" letter-spacing="1" text-anchor="middle" x="300" y="306"><tspan font-weight="700">OLYON</tspan><tspan font-weight="300"> GROUP</tspan></text></svg></a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="mobile-menu-btn" onclick="toggleMobileMenu(this)" type="button">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-links">
+<li><a href="#home" onclick="showPage('home');return false;">Home</a></li>
+<li><a class="active" href="#about" onclick="showPage('about');return false;">About</a></li>
+<li><a href="#services" onclick="showPage('services');return false;">Services</a></li>
+<li><a href="#contact" onclick="showPage('contact');return false;">Contact</a></li>
+<li><a class="nav-cta" href="#contact" onclick="showPage('contact');return false;">Apply Now</a></li>
+</ul>
 </nav>
-<div class="page-hero"><div class="ph-bg"></div><div class="ph-grid"></div><div class="ph-content"><div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">Our Story</span></div><h1>About <em>Olyon</em><br>Group</h1></div></div>
+<div class="page-hero"><div class="ph-bg"></div><div class="ph-grid"></div><div class="ph-content"><div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">Our Story</span></div><h1>About <em>Olyon</em><br/>Group</h1></div></div>
 <section>
- <div class="about-intro">
- <div class="about-text">
-  <h1>Bridging SA Talent with <em>Global Employers.</em></h1>
-  </div>
- </div>
- <section>
-  <div class="about-intro">
-   <div class="about-text">
-    <h2>Connecting professionals with <em>world-class opportunities</em></h2>
-    <p>Olyon Group is a specialized South African recruitment and placement agency. Initially established as a remote staffing partner, we have expanded our reach to provide direct international placement and relocation abroad.</p>
-    <p>Whether our professionals choose to excel remotely from South Africa or step onto the international stage abroad, we champion their career growth, ensuring fair compensation and full transparent support on visa and travel arrangements.</p>
- <a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;" class="btn-primary" style="margin-top:20px;display:inline-block;">Apply for a Role</a>
- </div>
- <div class="values">
- <div class="val-item"><h4>Our Mission</h4><p>To unlock international career opportunities for South African professionals by placing them with world-class international companies.</p></div>
- <div class="val-item"><h4>Our Vision</h4><p>To be the most trusted staffing partner in South Africa, known for quality of talent, integrity of service, and the career outcomes we create.</p></div>
- <div class="val-item"><h4>Integrity First</h4><p>Transparent with our clients and agents. No hidden terms, no unexpected fees. Every relationship is built on honest communication.</p></div>
- <div class="val-item"><h4>People Over Placements</h4><p>We care about the long-term careers of the professionals we employ and place, not just the placement fee. Our success is measured by how our people grow and thrive.</p></div>
- </div>
- </div>
+<div class="about-intro">
+<div class="about-text">
+<h1>Bridging SA Talent with <em>Global Employers.</em></h1>
+</div>
+</div>
+<section>
+<div class="about-intro">
+<div class="about-text">
+<h2>Connecting professionals with <em>world-class opportunities</em></h2>
+<p>Olyon Group is a specialized South African recruitment and placement agency. Initially established as a remote staffing partner, we have expanded our reach to provide direct international placement and relocation abroad.</p>
+<p>Whether our professionals choose to excel remotely from South Africa or step onto the international stage abroad, we champion their career growth, ensuring fair compensation and full transparent support on visa and travel arrangements.</p>
+<a class="btn-primary" contact\"]'));return="" false;"="" href="#contact" onclick="showPage('contact',document.querySelector('[data-page=\" style="margin-top:20px;display:inline-block;">Apply for a Role</a>
+</div>
+<div class="values">
+<div class="val-item"><h4>Our Mission</h4><p>To unlock international career opportunities for South African professionals by placing them with world-class international companies.</p></div>
+<div class="val-item"><h4>Our Vision</h4><p>To be the most trusted staffing partner in South Africa, known for quality of talent, integrity of service, and the career outcomes we create.</p></div>
+<div class="val-item"><h4>Integrity First</h4><p>Transparent with our clients and agents. No hidden terms, no unexpected fees. Every relationship is built on honest communication.</p></div>
+<div class="val-item"><h4>People Over Placements</h4><p>We care about the long-term careers of the professionals we employ and place, not just the placement fee. Our success is measured by how our people grow and thrive.</p></div>
+</div>
+</div>
 </section>
 <section style="background:var(--navy-mid);">
- <div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">Leadership</span></div>
- <h2 class="sec-title">Meet the <em>team</em></h2>
- <div class="directors-wrap">
- <div class="director-card">
- <div class="director-avatar">TM</div>
- <div>
- <div class="director-name">Themba Mkhize</div>
- <div class="director-title">Co-Founder & CEO</div>
- <p class="director-bio">CEO of Olyon Group and the driving force behind the company's mission to elevate South African talent on the global stage. We built Olyon Group on the belief that geography should never limit potential.</p>
- </div>
- </div>
- <div class="director-card">
- <div class="director-avatar">LS</div>
- <div>
- <div class="director-name">Lisa Sixpence</div>
- <div class="director-title">Co-Founder & COO </div>
- <p class="director-bio">Strategic architect behind our mission to globalize South African talent.</p>
- </div>
- </div>
- </div>
+<div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">Leadership</span></div>
+<h2 class="sec-title">Meet the <em>team</em></h2>
+<div class="directors-wrap">
+<div class="director-card">
+<div class="director-avatar">TM</div>
+<div>
+<div class="director-name">Themba Mkhize</div>
+<div class="director-title">Co-Founder &amp; CEO</div>
+<p class="director-bio">CEO of Olyon Group and the driving force behind the company's mission to elevate South African talent on the global stage. We built Olyon Group on the belief that geography should never limit potential.</p>
+</div>
+</div>
+<div class="director-card">
+<div class="director-avatar">LS</div>
+<div>
+<div class="director-name">Lisa Sixpence</div>
+<div class="director-title">Co-Founder &amp; COO </div>
+<p class="director-bio">Strategic architect behind our mission to globalize South African talent.</p>
+</div>
+</div>
+</div>
 </section>
 <div class="cta-strip">
- <h2 class="sec-title">Ready to take your career <em>global?</em></h2>
- <p class="sec-sub">Apply today and let us match you with an international career opportunity.</p>
- <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:40px;">
- <a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;" class="btn-primary">Apply for a Role</a>
- <a href="#" onclick="showPage('services',document.querySelectorAll('.page-tab')[2]);return false;" class="btn-outline">View Services</a>
- </div>
+<h2 class="sec-title">Ready to take your career <em>global?</em></h2>
+<p class="sec-sub">Apply today and let us match you with an international career opportunity.</p>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:40px;">
+<a class="btn-primary" contact\"]'));return="" false;"="" href="#contact" onclick="showPage('contact',document.querySelector('[data-page=\">Apply for a Role</a>
+<a class="btn-outline" false;"="" href="#services" onclick="showPage('services',document.querySelector('[data-page=\" services\"]'));return="">View Services</a>
+</div>
 </div>
 <footer>
- <div class="footer-grid">
- <div class="footer-brand">
- <img src="logo.png" alt="Olyon Group" style="height:90px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px;display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
- <div class="logo-fallback" style="margin-bottom:14px;display:none;">
- <div class="logo-icon">OG</div>
- <span class="logo-text">Olyon <span>Group</span></span>
- </div>
- <p>Placing South African talent with leading international companies.</p>
- </div>
- <div class="footer-col"><h4>Navigation</h4><ul><li><a href="#">Home</a></li><li><a href="#">About Us</a></li><li><a href="#">Services</a></li><li><a href="#">Contact</a></li></ul></div>
- <div class="footer-col"><h4>Staff</h4><ul><li><a href="#">Apply for a Role</a></li></ul></div>
- </div>
- <div class="footer-bottom"><p>© 2026 <span>Olyon Group (Pty) Ltd</span>. All rights reserved.</p></div>
-</footer>
+<div class="footer-grid">
+<div class="footer-brand">
+<svg aria-label="Olyon Group" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg"><g transform="translate(68 8)"><path d="M432,125 L431,136 L426,152 L418,166 L406,180 L391,192 L373,201 L358,205 L351,205 L350,206 L345,206 L344,205 L345,203 L355,199 L369,190 L385,174 L396,156 L402,136 L401,135 L400,136 L399,135 L394,135 L393,136 L356,136 L354,134 L354,125 L355,124 L431,124Z M332,55 L341,48 L356,41 L371,37 L382,37 L390,41 L400,48 L416,65 L423,77 L422,78 L391,78 L382,69 L369,61 L353,56 L346,56 L345,55 L333,56Z M94,59 L106,48 L124,38 L144,33 L152,33 L158,35 L172,43 L187,56 L301,166 L315,174 L334,179 L348,179 L349,178 L358,177 L367,173 L369,174 L361,182 L347,192 L329,200 L314,202 L302,198 L294,194 L282,185 L162,68 L151,61 L132,55 L112,55 L100,58 L95,61Z M119,28 L120,29 L119,31 L109,34 L91,46 L79,58 L73,66 L67,76 L60,94 L57,115 L58,116 L58,126 L62,140 L67,150 L74,159 L85,168 L96,174 L112,178 L129,178 L130,179 L121,186 L111,191 L97,195 L81,196 L76,194 L61,184 L51,174 L40,158 L34,145 L30,128 L30,102 L31,101 L31,97 L34,86 L41,71 L50,59 L61,48 L74,39 L89,32 L101,29Z M241,75 L249,83 L287,47 L299,39 L312,33 L326,29 L349,28 L357,30 L355,32 L348,33 L335,39 L321,49 L269,99 L268,103 L276,109 L295,90 L310,77 L320,71 L333,67 L351,67 L363,71 L373,77 L384,89 L440,89 L438,81 L434,72 L432,70 L431,66 L424,56 L411,42 L397,32 L382,24 L370,20 L362,19 L361,18 L355,18 L354,17 L330,17 L329,18 L324,18 L306,23 L293,29 L277,40Z M18,101 L18,129 L19,130 L19,135 L21,143 L27,159 L38,177 L49,189 L68,203 L88,212 L95,213 L99,215 L111,216 L112,217 L128,217 L129,216 L142,215 L162,209 L176,202 L192,190 L220,163 L222,159 L214,152 L177,187 L166,194 L153,200 L140,204 L128,205 L127,206 L106,205 L105,204 L106,202 L117,200 L127,195 L139,187 L175,154 L195,133 L188,126 L186,126 L157,154 L149,160 L135,166 L114,167 L103,164 L93,159 L81,148 L76,141 L71,129 L69,113 L70,112 L71,101 L75,92 L80,85 L91,75 L105,68 L114,67 L115,66 L128,66 L140,69 L151,75 L173,95 L182,105 L274,194 L280,199 L298,209 L317,215 L330,216 L331,217 L359,216 L383,209 L403,198 L418,185 L429,171 L438,154 L444,130 L444,112 L443,113 L344,113 L343,112 L342,113 L342,146 L382,146 L383,147 L372,158 L359,165 L348,168 L335,168 L334,167 L326,166 L315,161 L305,154 L272,121 L244,95 L240,90 L185,38 L175,31 L161,24 L144,19 L133,18 L132,17 L106,17 L105,18 L94,19 L74,26 L60,34 L52,40 L40,52 L31,64 L31,66 L29,68 L22,84Z" fill="#C9A84C" fill-rule="evenodd"></path></g><text fill="#F3F5F8" font-family="Arial,Helvetica,sans-serif" font-size="54" letter-spacing="1" text-anchor="middle" x="300" y="306"><tspan font-weight="700">OLYON</tspan><tspan font-weight="300"> GROUP</tspan></text></svg>
+<p>Placing South African talent with leading international companies.</p>
 </div>
-
+<div class="footer-col"><h4>Navigation</h4><ul><li><a href="#home" onclick="showPage('home');return false;">Home</a></li><li><a href="#about" onclick="showPage('about');return false;">About Us</a></li><li><a href="#services" onclick="showPage('services');return false;">Services</a></li><li><a href="#contact" onclick="showPage('contact');return false;">Contact</a></li></ul></div>
+<div class="footer-col"><h4>Staff</h4><ul><li><a href="#contact" onclick="showPage('contact');return false;">Apply for a Role</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p>© 2026 <span>Olyon Group (Pty) Ltd</span>. All rights reserved.</p></div>
+</footer>
+</section></div>
 <!-- ═══════════ SERVICES ═══════════ -->
 <div class="page" id="page-services">
 <nav>
- <a href="#" onclick="showPage('home',document.querySelectorAll('.page-tab')[0]);return false;" class="nav-logo"><img src="logo.png" alt="Olyon Group" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="logo-fallback" style="display:none;"><div class="logo-icon">OG</div><span class="logo-text">Olyon <span>Group</span></span></div></a>
- <div class="mobile-menu-btn" onclick="toggleMobileMenu(this)">
- <span></span><span></span><span></span>
- </div>
- <ul class="nav-links">
- <li><a href="#" onclick="showPage('home',document.querySelectorAll('.page-tab')[0]);return false;">Home</a></li>
- <li><a href="#" onclick="showPage('about',document.querySelectorAll('.page-tab')[1]);return false;">About</a></li>
- <li><a href="#" class="active">Services</a></li>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;">Contact</a></li>
- <li><a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;" class="nav-cta">Apply Now</a></li>
- </ul>
+<a class="nav-logo" href="#home" onclick="showPage('home');return false;"><svg aria-label="Olyon Group" class="brand-svg" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg"><g transform="translate(68 8)"><path d="M432,125 L431,136 L426,152 L418,166 L406,180 L391,192 L373,201 L358,205 L351,205 L350,206 L345,206 L344,205 L345,203 L355,199 L369,190 L385,174 L396,156 L402,136 L401,135 L400,136 L399,135 L394,135 L393,136 L356,136 L354,134 L354,125 L355,124 L431,124Z M332,55 L341,48 L356,41 L371,37 L382,37 L390,41 L400,48 L416,65 L423,77 L422,78 L391,78 L382,69 L369,61 L353,56 L346,56 L345,55 L333,56Z M94,59 L106,48 L124,38 L144,33 L152,33 L158,35 L172,43 L187,56 L301,166 L315,174 L334,179 L348,179 L349,178 L358,177 L367,173 L369,174 L361,182 L347,192 L329,200 L314,202 L302,198 L294,194 L282,185 L162,68 L151,61 L132,55 L112,55 L100,58 L95,61Z M119,28 L120,29 L119,31 L109,34 L91,46 L79,58 L73,66 L67,76 L60,94 L57,115 L58,116 L58,126 L62,140 L67,150 L74,159 L85,168 L96,174 L112,178 L129,178 L130,179 L121,186 L111,191 L97,195 L81,196 L76,194 L61,184 L51,174 L40,158 L34,145 L30,128 L30,102 L31,101 L31,97 L34,86 L41,71 L50,59 L61,48 L74,39 L89,32 L101,29Z M241,75 L249,83 L287,47 L299,39 L312,33 L326,29 L349,28 L357,30 L355,32 L348,33 L335,39 L321,49 L269,99 L268,103 L276,109 L295,90 L310,77 L320,71 L333,67 L351,67 L363,71 L373,77 L384,89 L440,89 L438,81 L434,72 L432,70 L431,66 L424,56 L411,42 L397,32 L382,24 L370,20 L362,19 L361,18 L355,18 L354,17 L330,17 L329,18 L324,18 L306,23 L293,29 L277,40Z M18,101 L18,129 L19,130 L19,135 L21,143 L27,159 L38,177 L49,189 L68,203 L88,212 L95,213 L99,215 L111,216 L112,217 L128,217 L129,216 L142,215 L162,209 L176,202 L192,190 L220,163 L222,159 L214,152 L177,187 L166,194 L153,200 L140,204 L128,205 L127,206 L106,205 L105,204 L106,202 L117,200 L127,195 L139,187 L175,154 L195,133 L188,126 L186,126 L157,154 L149,160 L135,166 L114,167 L103,164 L93,159 L81,148 L76,141 L71,129 L69,113 L70,112 L71,101 L75,92 L80,85 L91,75 L105,68 L114,67 L115,66 L128,66 L140,69 L151,75 L173,95 L182,105 L274,194 L280,199 L298,209 L317,215 L330,216 L331,217 L359,216 L383,209 L403,198 L418,185 L429,171 L438,154 L444,130 L444,112 L443,113 L344,113 L343,112 L342,113 L342,146 L382,146 L383,147 L372,158 L359,165 L348,168 L335,168 L334,167 L326,166 L315,161 L305,154 L272,121 L244,95 L240,90 L185,38 L175,31 L161,24 L144,19 L133,18 L132,17 L106,17 L105,18 L94,19 L74,26 L60,34 L52,40 L40,52 L31,64 L31,66 L29,68 L22,84Z" fill="#FFFFFF" fill-rule="evenodd"></path></g><text fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="54" letter-spacing="1" text-anchor="middle" x="300" y="306"><tspan font-weight="700">OLYON</tspan><tspan font-weight="300"> GROUP</tspan></text></svg></a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="mobile-menu-btn" onclick="toggleMobileMenu(this)" type="button">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-links">
+<li><a href="#home" onclick="showPage('home');return false;">Home</a></li>
+<li><a href="#about" onclick="showPage('about');return false;">About</a></li>
+<li><a class="active" href="#services" onclick="showPage('services');return false;">Services</a></li>
+<li><a href="#contact" onclick="showPage('contact');return false;">Contact</a></li>
+<li><a class="nav-cta" href="#contact" onclick="showPage('contact');return false;">Apply Now</a></li>
+</ul>
 </nav>
 <div class="page-hero"><div class="ph-bg"></div><div class="ph-grid"></div><div class="ph-content"><div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">What We Do</span></div><h1>Our <em>Services</em></h1></div></div>
-
- <section>
-  <div class="svcs-page-grid">
-   <div class="svc-page-card">
-    <span class="spc-icon">💻</span>
-    <h3>Remote Placement</h3>
-    <p>Secure full-time, high-paying remote roles with international companies without leaving South Africa.</p>
-    <ul>
-     <li>Local South African HR & Tax handling</li>
-     <li>International FX-pegged or market pay</li>
-     <li>Work-from-home infrastructure support</li>
-    </ul>
-   </div>
-   <div class="svc-page-card">
-    <span class="spc-icon">✈️</span>
-    <h3>International Relocation</h3>
-    <p>Transition smoothly into on-site overseas positions across the UK, Australia, Europe, and North America.</p>
-    <ul>
-     <li>Direct Work Visa Sponsorship</li>
-     <li>Flight & Travel Expense management</li>
-     <li>Relocation & Settling-in Allowances</li>
-    </ul>
-   </div>
-   <div class="svc-page-card">
-    <span class="spc-icon">🤝</span>
-    <h3>Employer Recruitment</h3>
-    <p>We assist international firms in recruiting premier South African talent for both remote teams and overseas headquarters.</p>
-    <ul>
-     <li>Rigorous technical & language vetting</li>
-     <li>Compliance & cross-border contracts</li>
-     <li>Global mobility logistics</li>
-    </ul>
-   </div>
-  </div>
- </section>
-
 <section>
- <div style="max-width:640px;margin-bottom:64px;">
- <div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">For Our Partners</span></div>
- <h2 class="sec-title">Strategic talent solutions for <em>growth focused</em> companies</h2>
- <p class="sec-sub">We help UK and Australian businesses scale efficiently with high performance South African professionals who are ready to deliver from day one.</p>
- </div>
- <div class="svcs-page-grid">
- <div class="svc-page-card"><span class="spc-icon">🎯</span><h3>High Performance Talent, Ready to Deliver</h3><p>The way businesses operate today is no longer confined by borders. With the rise of remote work, companies can now tap into global talent, while professionals, especially in South Africa can access international opportunities without leaving home. This shift has not only expanded possibilities but also raised the standard for how companies attract and engage top tier talent.</p><p style="margin-top:12px;font-size:13px;color:var(--slate);line-height:1.9;">The Olyon Group positions itself at the center of this evolution, helping businesses connect with the right people in a more strategic and impactful way. Rather than taking a one size fits all approach, Olyon focuses on building customised growth strategies that integrate lead generation, market positioning, and talent alignment. This ensures that businesses don't just find people to fill roles, but gain individuals who actively contribute to long term growth while professionals step into roles where their skills are genuinely valued and developed.</p><p style="margin-top:12px;font-size:13px;color:var(--slate);line-height:1.9;">Every professional we place benefits from full HR support, reliable payroll, and the security of South African employment protections, giving you a seamless, low risk hiring solution.</p></div>
- <div class="svc-page-card"><span class="spc-icon">📐</span><h3>Tailored Growth Strategy</h3><p>We don't believe in one size fits all. We work closely with your business to find the right candidate suitable for your business.</p><ul><li>Customised recruitment approach</li><li>Market aligned talent sourcing</li><li>Strategic role definition</li><li>Ongoing partnership support</li></ul></div>
- <div class="svc-page-card"><span class="spc-icon">📈</span><h3>Results of Working with Olyon Group</h3><p>We will help you scale efficiently, reduce costs, and strengthen your position in competitive markets by providing highly trained and skilled South African professionals.</p><ul><li>Efficient scaling</li><li>Reduced hiring costs</li><li>Strengthened market position</li><li>Highly trained professionals</li></ul></div>
- </div>
+<div class="svcs-page-grid">
+<div class="svc-page-card">
+<span class="spc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><rect height="13" rx="1.5" width="18" x="3" y="4"></rect><path d="M1 19h22v2H1z"></path></svg></span>
+<h3>Remote Placement</h3>
+<p>Secure full-time, high-paying remote roles with international companies without leaving South Africa.</p>
+<ul>
+<li>Local South African HR &amp; Tax handling</li>
+<li>International FX-pegged or market pay</li>
+<li>Work-from-home infrastructure support</li>
+</ul>
+</div>
+<div class="svc-page-card">
+<span class="spc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M22 2 2 10l8 3 3 8 9-19ZM10 13l4-4-1 8-3-4Z"></path></svg></span>
+<h3>International Relocation</h3>
+<p>Transition smoothly into on-site overseas positions across the UK, Australia, Europe, and North America.</p>
+<ul>
+<li>Direct Work Visa Sponsorship</li>
+<li>Flight &amp; Travel Expense management</li>
+<li>Relocation &amp; Settling-in Allowances</li>
+</ul>
+</div>
+<div class="svc-page-card">
+<span class="spc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M2 8 7 4l5 2 4-2 6 4-3 4-4-3-4 4 4 3-3 3-4-2-3-3-3 1V8Z"></path></svg></span>
+<h3>Employer Recruitment</h3>
+<p>We assist international firms in recruiting premier South African talent for both remote teams and overseas headquarters.</p>
+<ul>
+<li>Rigorous technical &amp; language vetting</li>
+<li>Compliance &amp; cross-border contracts</li>
+<li>Global mobility logistics</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<div style="max-width:640px;margin-bottom:64px;">
+<div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">For Our Partners</span></div>
+<h2 class="sec-title">Strategic talent solutions for <em>growth focused</em> companies</h2>
+<p class="sec-sub">We help UK and Australian businesses scale efficiently with high performance South African professionals who are ready to deliver from day one.</p>
+</div>
+<div class="svcs-page-grid">
+<div class="svc-page-card"><span class="spc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M12 2a10 10 0 1 0 10 10h-3a7 7 0 1 1-7-7V2Zm0 5a5 5 0 1 0 5 5h-3a2 2 0 1 1-2-2V7Zm2 2 8-8v6h-5l-3 3Z"></path></svg></span><h3>High Performance Talent, Ready to Deliver</h3><p>The way businesses operate today is no longer confined by borders. With the rise of remote work, companies can now tap into global talent, while professionals, especially in South Africa can access international opportunities without leaving home. This shift has not only expanded possibilities but also raised the standard for how companies attract and engage top tier talent.</p><p style="margin-top:12px;font-size:13px;color:var(--slate);line-height:1.9;">The Olyon Group positions itself at the center of this evolution, helping businesses connect with the right people in a more strategic and impactful way. Rather than taking a one size fits all approach, Olyon focuses on building customised growth strategies that integrate lead generation, market positioning, and talent alignment. This ensures that businesses don't just find people to fill roles, but gain individuals who actively contribute to long term growth while professionals step into roles where their skills are genuinely valued and developed.</p><p style="margin-top:12px;font-size:13px;color:var(--slate);line-height:1.9;">Every professional we place benefits from full HR support, reliable payroll, and the security of South African employment protections, giving you a seamless, low risk hiring solution.</p></div>
+<div class="svc-page-card"><span class="spc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M3 21V3l18 18H3Zm5-4h5l-5-5v5Z"></path></svg></span><h3>Tailored Growth Strategy</h3><p>We don't believe in one size fits all. We work closely with your business to find the right candidate suitable for your business.</p><ul><li>Customised recruitment approach</li><li>Market aligned talent sourcing</li><li>Strategic role definition</li><li>Ongoing partnership support</li></ul></div>
+<div class="svc-page-card"><span class="spc-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M3 3h2v16h16v2H3V3Zm4 12 5-5 3 2 5-7 2 2-6 9-4-3-3 4-2-2Z"></path></svg></span><h3>Results of Working with Olyon Group</h3><p>We will help you scale efficiently, reduce costs, and strengthen your position in competitive markets by providing highly trained and skilled South African professionals.</p><ul><li>Efficient scaling</li><li>Reduced hiring costs</li><li>Strengthened market position</li><li>Highly trained professionals</li></ul></div>
+</div>
 </section>
 <div class="cta-strip">
- <h2 class="sec-title">Sounds like the right <em>fit?</em></h2>
- <p class="sec-sub">Submit your application and our team will contact you within 48 hours.</p>
- <a href="#" onclick="showPage('contact',document.querySelectorAll('.page-tab')[3]);return false;" class="btn-primary" style="margin-top:40px;display:inline-block;">Apply for a Role</a>
+<h2 class="sec-title">Sounds like the right <em>fit?</em></h2>
+<p class="sec-sub">Submit your application and our team will contact you within 48 hours.</p>
+<a class="btn-primary" contact\"]'));return="" false;"="" href="#contact" onclick="showPage('contact',document.querySelector('[data-page=\" style="margin-top:40px;display:inline-block;">Apply for a Role</a>
 </div>
 <footer>
- <div class="footer-grid">
- <div class="footer-brand">
- <img src="logo.png" alt="Olyon Group" style="height:90px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px;display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
- <div class="logo-fallback" style="margin-bottom:14px;display:none;">
- <div class="logo-icon">OG</div>
- <span class="logo-text">Olyon <span>Group</span></span>
- </div>
- <p>Placing South African talent with leading international companies.</p>
- </div>
- <div class="footer-col"><h4>Navigation</h4><ul><li><a href="#">Home</a></li><li><a href="#">About Us</a></li><li><a href="#">Services</a></li><li><a href="#">Contact</a></li></ul></div>
- <div class="footer-col"><h4>Staff</h4><ul><li><a href="#">Apply for a Role</a></li></ul></div>
- </div>
- <div class="footer-bottom"><p>© 2026 <span>Olyon Group (Pty) Ltd</span>. All rights reserved.</p></div>
+<div class="footer-grid">
+<div class="footer-brand">
+<svg aria-label="Olyon Group" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg"><g transform="translate(68 8)"><path d="M432,125 L431,136 L426,152 L418,166 L406,180 L391,192 L373,201 L358,205 L351,205 L350,206 L345,206 L344,205 L345,203 L355,199 L369,190 L385,174 L396,156 L402,136 L401,135 L400,136 L399,135 L394,135 L393,136 L356,136 L354,134 L354,125 L355,124 L431,124Z M332,55 L341,48 L356,41 L371,37 L382,37 L390,41 L400,48 L416,65 L423,77 L422,78 L391,78 L382,69 L369,61 L353,56 L346,56 L345,55 L333,56Z M94,59 L106,48 L124,38 L144,33 L152,33 L158,35 L172,43 L187,56 L301,166 L315,174 L334,179 L348,179 L349,178 L358,177 L367,173 L369,174 L361,182 L347,192 L329,200 L314,202 L302,198 L294,194 L282,185 L162,68 L151,61 L132,55 L112,55 L100,58 L95,61Z M119,28 L120,29 L119,31 L109,34 L91,46 L79,58 L73,66 L67,76 L60,94 L57,115 L58,116 L58,126 L62,140 L67,150 L74,159 L85,168 L96,174 L112,178 L129,178 L130,179 L121,186 L111,191 L97,195 L81,196 L76,194 L61,184 L51,174 L40,158 L34,145 L30,128 L30,102 L31,101 L31,97 L34,86 L41,71 L50,59 L61,48 L74,39 L89,32 L101,29Z M241,75 L249,83 L287,47 L299,39 L312,33 L326,29 L349,28 L357,30 L355,32 L348,33 L335,39 L321,49 L269,99 L268,103 L276,109 L295,90 L310,77 L320,71 L333,67 L351,67 L363,71 L373,77 L384,89 L440,89 L438,81 L434,72 L432,70 L431,66 L424,56 L411,42 L397,32 L382,24 L370,20 L362,19 L361,18 L355,18 L354,17 L330,17 L329,18 L324,18 L306,23 L293,29 L277,40Z M18,101 L18,129 L19,130 L19,135 L21,143 L27,159 L38,177 L49,189 L68,203 L88,212 L95,213 L99,215 L111,216 L112,217 L128,217 L129,216 L142,215 L162,209 L176,202 L192,190 L220,163 L222,159 L214,152 L177,187 L166,194 L153,200 L140,204 L128,205 L127,206 L106,205 L105,204 L106,202 L117,200 L127,195 L139,187 L175,154 L195,133 L188,126 L186,126 L157,154 L149,160 L135,166 L114,167 L103,164 L93,159 L81,148 L76,141 L71,129 L69,113 L70,112 L71,101 L75,92 L80,85 L91,75 L105,68 L114,67 L115,66 L128,66 L140,69 L151,75 L173,95 L182,105 L274,194 L280,199 L298,209 L317,215 L330,216 L331,217 L359,216 L383,209 L403,198 L418,185 L429,171 L438,154 L444,130 L444,112 L443,113 L344,113 L343,112 L342,113 L342,146 L382,146 L383,147 L372,158 L359,165 L348,168 L335,168 L334,167 L326,166 L315,161 L305,154 L272,121 L244,95 L240,90 L185,38 L175,31 L161,24 L144,19 L133,18 L132,17 L106,17 L105,18 L94,19 L74,26 L60,34 L52,40 L40,52 L31,64 L31,66 L29,68 L22,84Z" fill="#C9A84C" fill-rule="evenodd"></path></g><text fill="#F3F5F8" font-family="Arial,Helvetica,sans-serif" font-size="54" letter-spacing="1" text-anchor="middle" x="300" y="306"><tspan font-weight="700">OLYON</tspan><tspan font-weight="300"> GROUP</tspan></text></svg>
+<p>Placing South African talent with leading international companies.</p>
+</div>
+<div class="footer-col"><h4>Navigation</h4><ul><li><a href="#home" onclick="showPage('home');return false;">Home</a></li><li><a href="#about" onclick="showPage('about');return false;">About Us</a></li><li><a href="#services" onclick="showPage('services');return false;">Services</a></li><li><a href="#contact" onclick="showPage('contact');return false;">Contact</a></li></ul></div>
+<div class="footer-col"><h4>Staff</h4><ul><li><a href="#contact" onclick="showPage('contact');return false;">Apply for a Role</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p>© 2026 <span>Olyon Group (Pty) Ltd</span>. All rights reserved.</p></div>
 </footer>
 </div>
-
 <!-- ═══════════ CONTACT ═══════════ -->
 <div class="page" id="page-contact">
 <nav>
- <a href="#" onclick="showPage('home',document.querySelectorAll('.page-tab')[0]);return false;" class="nav-logo"><img src="logo.png" alt="Olyon Group" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="logo-fallback" style="display:none;"><div class="logo-icon">OG</div><span class="logo-text">Olyon <span>Group</span></span></div></a>
- <div class="mobile-menu-btn" onclick="toggleMobileMenu(this)">
- <span></span><span></span><span></span>
- </div>
- <ul class="nav-links">
- <li><a href="#" onclick="showPage('home',document.querySelectorAll('.page-tab')[0]);return false;">Home</a></li>
- <li><a href="#" onclick="showPage('about',document.querySelectorAll('.page-tab')[1]);return false;">About</a></li>
- <li><a href="#" onclick="showPage('services',document.querySelectorAll('.page-tab')[2]);return false;">Services</a></li>
- <li><a href="#" class="active">Contact</a></li>
- <li><a href="#" class="nav-cta">Apply Now</a></li>
- </ul>
+<a class="nav-logo" href="#home" onclick="showPage('home');return false;"><svg aria-label="Olyon Group" class="brand-svg" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg"><g transform="translate(68 8)"><path d="M432,125 L431,136 L426,152 L418,166 L406,180 L391,192 L373,201 L358,205 L351,205 L350,206 L345,206 L344,205 L345,203 L355,199 L369,190 L385,174 L396,156 L402,136 L401,135 L400,136 L399,135 L394,135 L393,136 L356,136 L354,134 L354,125 L355,124 L431,124Z M332,55 L341,48 L356,41 L371,37 L382,37 L390,41 L400,48 L416,65 L423,77 L422,78 L391,78 L382,69 L369,61 L353,56 L346,56 L345,55 L333,56Z M94,59 L106,48 L124,38 L144,33 L152,33 L158,35 L172,43 L187,56 L301,166 L315,174 L334,179 L348,179 L349,178 L358,177 L367,173 L369,174 L361,182 L347,192 L329,200 L314,202 L302,198 L294,194 L282,185 L162,68 L151,61 L132,55 L112,55 L100,58 L95,61Z M119,28 L120,29 L119,31 L109,34 L91,46 L79,58 L73,66 L67,76 L60,94 L57,115 L58,116 L58,126 L62,140 L67,150 L74,159 L85,168 L96,174 L112,178 L129,178 L130,179 L121,186 L111,191 L97,195 L81,196 L76,194 L61,184 L51,174 L40,158 L34,145 L30,128 L30,102 L31,101 L31,97 L34,86 L41,71 L50,59 L61,48 L74,39 L89,32 L101,29Z M241,75 L249,83 L287,47 L299,39 L312,33 L326,29 L349,28 L357,30 L355,32 L348,33 L335,39 L321,49 L269,99 L268,103 L276,109 L295,90 L310,77 L320,71 L333,67 L351,67 L363,71 L373,77 L384,89 L440,89 L438,81 L434,72 L432,70 L431,66 L424,56 L411,42 L397,32 L382,24 L370,20 L362,19 L361,18 L355,18 L354,17 L330,17 L329,18 L324,18 L306,23 L293,29 L277,40Z M18,101 L18,129 L19,130 L19,135 L21,143 L27,159 L38,177 L49,189 L68,203 L88,212 L95,213 L99,215 L111,216 L112,217 L128,217 L129,216 L142,215 L162,209 L176,202 L192,190 L220,163 L222,159 L214,152 L177,187 L166,194 L153,200 L140,204 L128,205 L127,206 L106,205 L105,204 L106,202 L117,200 L127,195 L139,187 L175,154 L195,133 L188,126 L186,126 L157,154 L149,160 L135,166 L114,167 L103,164 L93,159 L81,148 L76,141 L71,129 L69,113 L70,112 L71,101 L75,92 L80,85 L91,75 L105,68 L114,67 L115,66 L128,66 L140,69 L151,75 L173,95 L182,105 L274,194 L280,199 L298,209 L317,215 L330,216 L331,217 L359,216 L383,209 L403,198 L418,185 L429,171 L438,154 L444,130 L444,112 L443,113 L344,113 L343,112 L342,113 L342,146 L382,146 L383,147 L372,158 L359,165 L348,168 L335,168 L334,167 L326,166 L315,161 L305,154 L272,121 L244,95 L240,90 L185,38 L175,31 L161,24 L144,19 L133,18 L132,17 L106,17 L105,18 L94,19 L74,26 L60,34 L52,40 L40,52 L31,64 L31,66 L29,68 L22,84Z" fill="#FFFFFF" fill-rule="evenodd"></path></g><text fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="54" letter-spacing="1" text-anchor="middle" x="300" y="306"><tspan font-weight="700">OLYON</tspan><tspan font-weight="300"> GROUP</tspan></text></svg></a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="mobile-menu-btn" onclick="toggleMobileMenu(this)" type="button">
+<span></span><span></span><span></span>
+</button>
+<ul class="nav-links">
+<li><a href="#home" onclick="showPage('home');return false;">Home</a></li>
+<li><a href="#about" onclick="showPage('about');return false;">About</a></li>
+<li><a href="#services" onclick="showPage('services');return false;">Services</a></li>
+<li><a class="active" href="#contact" onclick="showPage('contact');return false;">Contact</a></li>
+<li><a class="nav-cta" href="#contact" onclick="showPage('contact');return false;">Apply Now</a></li>
+</ul>
 </nav>
-<div class="page-hero"><div class="ph-bg"></div><div class="ph-grid"></div><div class="ph-content"><div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">Get In Touch</span></div><h1>Contact <em>&</em><br>Apply</h1></div></div>
+<div class="page-hero"><div class="ph-bg"></div><div class="ph-grid"></div><div class="ph-content"><div class="sec-eyebrow"><div class="sec-eyebrow-line"></div><span class="sec-eyebrow-text">Get In Touch</span></div><h1>Contact <em>&amp;</em><br/>Apply</h1></div></div>
 <section>
- <div class="contact-layout">
- <div class="contact-info">
- <h2>Let's start your<br><em>journey</em> together</h2>
- <p>Whether you're looking to apply for a role or have a general enquiry, we'd love to hear from you. Our team responds within 48 hours.</p>
- <div class="c-detail"><div class="c-icon">✉️</div><div class="c-text"><label>Email</label><span>staffing@olyongroup.com</span></div></div>
- <div class="c-detail"><div class="c-icon">📍</div><div class="c-text"><label>Address</label><span> Sandton, Johannesburg, 2196</span></div></div>
- <div class="c-detail"><div class="c-icon">🌍</div><div class="c-text"><label>Placing Talent For</label><span>UK,USA & Australian companies</span></div></div>
- <div style="margin-top:40px;padding:24px 28px;border:1px solid var(--border);border-radius:2px;border-left:3px solid var(--gold);">
- <p style="font-size:11px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Currently Hiring</p>
- <p style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--white);margin-bottom:10px;">Roles available in USA</p>
- <ul style="list-style:none;margin-bottom:10px;">
-  <li style="font-size:14px;color:var(--slate-light);padding:5px 0;border-bottom:1px solid rgba(201,168,76,0.08);">Nursing</li>
- 
- </ul>
- <p style="font-size:12px;color:var(--slate);line-height:1.7;">Placements abroad. Open to candidates from different countries with visa and travel sponsored. Competitive salary.</p>
+<div class="contact-layout">
+<div class="contact-info">
+<h2>Let's start your<br/><em>journey</em> together</h2>
+<p>Whether you're looking to apply for a role or have a general enquiry, we'd love to hear from you. Our team responds within 48 hours.</p>
+<div class="c-detail"><div class="c-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M2 5h20v14H2V5Zm2 2 8 6 8-6H4Z" fill-rule="evenodd"></path></svg></div><div class="c-text"><label>Email</label><span>staffing@olyongroup.com</span></div></div>
+<div class="c-detail"><div class="c-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M12 1a8 8 0 0 0-8 8c0 6 8 14 8 14s8-8 8-14a8 8 0 0 0-8-8Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" fill-rule="evenodd"></path></svg></div><div class="c-text"><label>Address</label><span> Sandton, Johannesburg, 2196</span></div></div>
+<div class="c-detail"><div class="c-icon"><svg aria-hidden="true" fill="currentColor" focusable="false" height="28" viewbox="0 0 24 24" width="28"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 2v6H5a8 8 0 0 1 6-6Zm2 0a8 8 0 0 1 6 6h-6V4Zm-8 8h6v8a8 8 0 0 1-6-8Zm8 0h6a8 8 0 0 1-6 8v-8Z"></path></svg></div><div class="c-text"><label>Placing Talent For</label><span>UK,USA &amp; Australian companies</span></div></div>
+<div style="margin-top:40px;padding:24px 28px;border:1px solid var(--border);border-radius:2px;border-left:3px solid var(--gold);">
+<p style="font-size:11px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Currently Hiring</p>
+<p style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--white);margin-bottom:10px;">Roles available in USA</p>
+<ul style="list-style:none;margin-bottom:10px;">
+<li style="font-size:14px;color:var(--slate-light);padding:5px 0;border-bottom:1px solid rgba(201,168,76,0.08);">Nursing</li>
+</ul>
+<p style="font-size:12px;color:var(--slate);line-height:1.7;">Placements abroad. Open to candidates from different countries with visa and travel sponsored. Competitive salary.</p>
 </div>
- </div>
- <div class="form-box">
- <h3>Get in touch</h3>
- <p>Choose your enquiry type below</p>
- <div class="f-tabs">
- <button class="f-tab active" onclick="switchTab('apply')">Apply for a Role</button>
- <button class="f-tab" onclick="switchTab('enquiry')">General Enquiry</button>
- </div>
- <div class="f-panel active" id="f-apply">
-        <form id="applyForm" onsubmit="return submitToSheet(this, 'apply');">
-        <div class="f-row">
-          <div class="f-group"><label>First Name *</label><input type="text" name="First Name" placeholder="Your first name" required></div>
-          <div class="f-group"><label>Last Name *</label><input type="text" name="Last Name" placeholder="Your last name" required></div>
-        </div>
-        <div class="f-group"><label>Email Address *</label><input type="email" name="Email Address" placeholder="your@email.com" required></div>
-        <div class="f-group"><label>Phone Number *</label><input type="tel" name="Phone Number" placeholder="+27 XX XXX XXXX" required></div>
-        <div class="f-group"><label>City / Province *</label><input type="text" name="City / Province" placeholder="e.g. Johannesburg, Gauteng" required></div>
-        <div class="f-group"><label>Years of Sales Experience *</label><select name="Years of Experience" required><option value="">Select experience level</option><option value="Less than 1 year">Less than 1 year</option><option value="1 2 years">1 2 years</option><option value="2 3 years">2 3 years</option><option value="3 5 years">3 5 years</option><option value="5+ years">5+ years</option></select></div>
-        <div class="f-group"><label>Preferred Market</label><select name="Preferred Market"><option value="">Select preference</option><option value="Remote">Remote</option><option value="Abroad">Abroad</option><option value="No preference">No preference</option></select></div>
-        <div class="f-group"><label>Tell us about yourself *</label><textarea name="About Themselves" placeholder="Briefly describe your sales experience and why you want this role..." required></textarea></div>
-        <p class="f-note">By submitting you consent to Olyon Group processing your personal information for recruitment purposes in accordance with POPIA.</p>
-        <button type="submit" class="btn-primary" style="width:100%;font-size:12px;">Submit Application</button>
-        </form>
-      </div>
- <div class="f-panel" id="f-enquiry">
-        <form id="enquiryForm" onsubmit="return submitToSheet(this, 'enquiry');">
-        <div class="f-row">
-          <div class="f-group"><label>Your Name *</label><input type="text" name="Full Name" placeholder="Full name" required></div>
-          <div class="f-group"><label>Company</label><input type="text" name="Company" placeholder="Your company name"></div>
-        </div>
-        <div class="f-group"><label>Email Address *</label><input type="email" name="Email Address" placeholder="your@email.com" required></div>
-        <div class="f-group"><label>Subject *</label><select name="Subject" required><option value="">Select a subject</option><option value="Company looking for staff">I am a company looking for SDR staff</option><option value="Candidate with question">I am a candidate with a question</option><option value="General enquiry">General enquiry</option></select></div>
-        <div class="f-group"><label>Message *</label><textarea name="Message" placeholder="How can we help you?" style="min-height:140px;" required></textarea></div>
-        <p class="f-note">By submitting you consent to Olyon Group processing your personal information to respond to your enquiry in accordance with POPIA.</p>
-        <button type="submit" class="btn-primary" style="width:100%;font-size:12px;">Send Message</button>
-        </form>
-      </div>
- </div>
- </div>
+</div>
+<div class="form-box">
+<h3>Get in touch</h3>
+<p>Choose your enquiry type below</p>
+<div class="f-tabs">
+<button class="f-tab active" onclick="switchTab('apply')">Apply for a Role</button>
+<button class="f-tab" onclick="switchTab('enquiry')">General Enquiry</button>
+</div>
+<div class="f-panel active" id="f-apply">
+<form id="applyForm" method="post" onsubmit="return submitToSheet(this, 'apply');">
+<div class="f-row">
+<div class="f-group"><label for="field-first-name-applyForm">First Name *</label><input id="field-first-name-applyForm" name="First Name" placeholder="Your first name" required="" type="text"/></div>
+<div class="f-group"><label for="field-last-name-applyForm">Last Name *</label><input id="field-last-name-applyForm" name="Last Name" placeholder="Your last name" required="" type="text"/></div>
+</div>
+<div class="f-group"><label for="field-email-address-applyForm">Email Address *</label><input id="field-email-address-applyForm" name="Email Address" placeholder="your@email.com" required="" type="email"/></div>
+<div class="f-group"><label for="field-phone-number-applyForm">Phone Number *</label><input id="field-phone-number-applyForm" name="Phone Number" placeholder="+27 XX XXX XXXX" required="" type="tel"/></div>
+<div class="f-group"><label for="field-city-province-applyForm">City / Province *</label><input id="field-city-province-applyForm" name="City / Province" placeholder="e.g. Johannesburg, Gauteng" required="" type="text"/></div>
+<div class="f-group"><label for="field-years-of-experience-applyForm">Years of Sales Experience *</label><select id="field-years-of-experience-applyForm" name="Years of Experience" required=""><option value="">Select experience level</option><option value="Less than 1 year">Less than 1 year</option><option value="1 2 years">1 2 years</option><option value="2 3 years">2 3 years</option><option value="3 5 years">3 5 years</option><option value="5+ years">5+ years</option></select></div>
+<div class="f-group"><label for="field-preferred-market-applyForm">Preferred Market</label><select id="field-preferred-market-applyForm" name="Preferred Market"><option value="">Select preference</option><option value="Remote">Remote</option><option value="Abroad">Abroad</option><option value="No preference">No preference</option></select></div>
+<div class="f-group"><label for="field-about-themselves-applyForm">Tell us about yourself *</label><textarea id="field-about-themselves-applyForm" name="About Themselves" placeholder="Briefly describe your sales experience and why you want this role..." required=""></textarea></div>
+<p class="f-note">By submitting you consent to Olyon Group processing your personal information for recruitment purposes in accordance with POPIA.</p>
+<button class="btn-primary" style="width:100%;font-size:12px;" type="submit">Submit Application</button>
+</form>
+</div>
+<div class="f-panel" id="f-enquiry">
+<form id="enquiryForm" method="post" onsubmit="return submitToSheet(this, 'enquiry');">
+<div class="f-row">
+<div class="f-group"><label for="field-full-name-enquiryForm">Your Name *</label><input id="field-full-name-enquiryForm" name="Full Name" placeholder="Full name" required="" type="text"/></div>
+<div class="f-group"><label for="field-company-enquiryForm">Company</label><input id="field-company-enquiryForm" name="Company" placeholder="Your company name" type="text"/></div>
+</div>
+<div class="f-group"><label for="field-email-address-enquiryForm">Email Address *</label><input id="field-email-address-enquiryForm" name="Email Address" placeholder="your@email.com" required="" type="email"/></div>
+<div class="f-group"><label for="field-subject-enquiryForm">Subject *</label><select id="field-subject-enquiryForm" name="Subject" required=""><option value="">Select a subject</option><option value="Company looking for staff">I am a company looking for SDR staff</option><option value="Candidate with question">I am a candidate with a question</option><option value="General enquiry">General enquiry</option></select></div>
+<div class="f-group"><label for="field-message-enquiryForm">Message *</label><textarea id="field-message-enquiryForm" name="Message" placeholder="How can we help you?" required="" style="min-height:140px;"></textarea></div>
+<p class="f-note">By submitting you consent to Olyon Group processing your personal information to respond to your enquiry in accordance with POPIA.</p>
+<button class="btn-primary" style="width:100%;font-size:12px;" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</div>
 </section>
 <footer>
- <div class="footer-grid">
- <div class="footer-brand">
- <img src="logo.png" alt="Olyon Group" style="height:90px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px;display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
- <div class="logo-fallback" style="margin-bottom:14px;display:none;">
- <div class="logo-icon">OG</div>
- <span class="logo-text">Olyon <span>Group</span></span>
- </div>
- <p>Placing South African talent with leading international companies.</p>
- </div>
- <div class="footer-col"><h4>Navigation</h4><ul><li><a href="#">Home</a></li><li><a href="#">About Us</a></li><li><a href="#">Services</a></li><li><a href="#">Contact</a></li></ul></div>
- <div class="footer-col"><h4>Staff</h4><ul><li><a href="#">Apply for a Role</a></li></ul></div>
- </div>
- <div class="footer-bottom"><p>© 2026 <span>Olyon Group (Pty) Ltd</span>. All rights reserved.</p></div>
+<div class="footer-grid">
+<div class="footer-brand">
+<svg aria-label="Olyon Group" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg"><g transform="translate(68 8)"><path d="M432,125 L431,136 L426,152 L418,166 L406,180 L391,192 L373,201 L358,205 L351,205 L350,206 L345,206 L344,205 L345,203 L355,199 L369,190 L385,174 L396,156 L402,136 L401,135 L400,136 L399,135 L394,135 L393,136 L356,136 L354,134 L354,125 L355,124 L431,124Z M332,55 L341,48 L356,41 L371,37 L382,37 L390,41 L400,48 L416,65 L423,77 L422,78 L391,78 L382,69 L369,61 L353,56 L346,56 L345,55 L333,56Z M94,59 L106,48 L124,38 L144,33 L152,33 L158,35 L172,43 L187,56 L301,166 L315,174 L334,179 L348,179 L349,178 L358,177 L367,173 L369,174 L361,182 L347,192 L329,200 L314,202 L302,198 L294,194 L282,185 L162,68 L151,61 L132,55 L112,55 L100,58 L95,61Z M119,28 L120,29 L119,31 L109,34 L91,46 L79,58 L73,66 L67,76 L60,94 L57,115 L58,116 L58,126 L62,140 L67,150 L74,159 L85,168 L96,174 L112,178 L129,178 L130,179 L121,186 L111,191 L97,195 L81,196 L76,194 L61,184 L51,174 L40,158 L34,145 L30,128 L30,102 L31,101 L31,97 L34,86 L41,71 L50,59 L61,48 L74,39 L89,32 L101,29Z M241,75 L249,83 L287,47 L299,39 L312,33 L326,29 L349,28 L357,30 L355,32 L348,33 L335,39 L321,49 L269,99 L268,103 L276,109 L295,90 L310,77 L320,71 L333,67 L351,67 L363,71 L373,77 L384,89 L440,89 L438,81 L434,72 L432,70 L431,66 L424,56 L411,42 L397,32 L382,24 L370,20 L362,19 L361,18 L355,18 L354,17 L330,17 L329,18 L324,18 L306,23 L293,29 L277,40Z M18,101 L18,129 L19,130 L19,135 L21,143 L27,159 L38,177 L49,189 L68,203 L88,212 L95,213 L99,215 L111,216 L112,217 L128,217 L129,216 L142,215 L162,209 L176,202 L192,190 L220,163 L222,159 L214,152 L177,187 L166,194 L153,200 L140,204 L128,205 L127,206 L106,205 L105,204 L106,202 L117,200 L127,195 L139,187 L175,154 L195,133 L188,126 L186,126 L157,154 L149,160 L135,166 L114,167 L103,164 L93,159 L81,148 L76,141 L71,129 L69,113 L70,112 L71,101 L75,92 L80,85 L91,75 L105,68 L114,67 L115,66 L128,66 L140,69 L151,75 L173,95 L182,105 L274,194 L280,199 L298,209 L317,215 L330,216 L331,217 L359,216 L383,209 L403,198 L418,185 L429,171 L438,154 L444,130 L444,112 L443,113 L344,113 L343,112 L342,113 L342,146 L382,146 L383,147 L372,158 L359,165 L348,168 L335,168 L334,167 L326,166 L315,161 L305,154 L272,121 L244,95 L240,90 L185,38 L175,31 L161,24 L144,19 L133,18 L132,17 L106,17 L105,18 L94,19 L74,26 L60,34 L52,40 L40,52 L31,64 L31,66 L29,68 L22,84Z" fill="#C9A84C" fill-rule="evenodd"></path></g><text fill="#F3F5F8" font-family="Arial,Helvetica,sans-serif" font-size="54" letter-spacing="1" text-anchor="middle" x="300" y="306"><tspan font-weight="700">OLYON</tspan><tspan font-weight="300"> GROUP</tspan></text></svg>
+<p>Placing South African talent with leading international companies.</p>
+</div>
+<div class="footer-col"><h4>Navigation</h4><ul><li><a href="#home" onclick="showPage('home');return false;">Home</a></li><li><a href="#about" onclick="showPage('about');return false;">About Us</a></li><li><a href="#services" onclick="showPage('services');return false;">Services</a></li><li><a href="#contact" onclick="showPage('contact');return false;">Contact</a></li></ul></div>
+<div class="footer-col"><h4>Staff</h4><ul><li><a href="#contact" onclick="showPage('contact');return false;">Apply for a Role</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p>© 2026 <span>Olyon Group (Pty) Ltd</span>. All rights reserved.</p></div>
 </footer>
 </div>
-
 <script>
-// ====== CONFIG: YOUR GOOGLE APPS SCRIPT WEB APP URL ======
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbza9EAdKWQIvEcZt8BowbyC5cSP_hh_CKBBt0xRQX5YOp89m07zxCDu9VbJQU5OYr7C8g/exec';
-
-function showPage(name, tabEl) {
- document.querySelectorAll('.nav-links').forEach(menu => menu.classList.remove('mobile-open'));
- document.querySelectorAll('.mobile-menu-btn').forEach(btn => btn.classList.remove('active'));
- document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
- document.querySelectorAll('.page-tab').forEach(t => t.classList.remove('active'));
- document.getElementById('page-' + name).classList.add('active');
- if (tabEl) tabEl.classList.add('active');
- window.scrollTo(0, 0);
-}
-
-function toggleMobileMenu(btn) {
- const nav = btn.closest('nav');
- const links = nav.querySelector('.nav-links');
- btn.classList.toggle('active');
- links.classList.toggle('mobile-open');
-}
-
-document.addEventListener('click', function(e) {
- if (e.target.closest('.nav-links.mobile-open a')) {
- document.querySelectorAll('.nav-links').forEach(menu => menu.classList.remove('mobile-open'));
- document.querySelectorAll('.mobile-menu-btn').forEach(btn => btn.classList.remove('active'));
- }
-});
-
-function switchTab(name) {
- document.querySelectorAll('.f-tab').forEach(t => t.classList.remove('active'));
- document.querySelectorAll('.f-panel').forEach(p => p.classList.remove('active'));
- if (name === 'apply') {
- document.querySelectorAll('.f-tab')[0].classList.add('active');
- document.getElementById('f-apply').classList.add('active');
- } else {
- document.querySelectorAll('.f-tab')[1].classList.add('active');
- document.getElementById('f-enquiry').classList.add('active');
- }
-}
-
-// ====== SUBMIT TO GOOGLE SHEETS VIA APPS SCRIPT ======
-function submitToSheet(form, type) {
-  const btn = form.querySelector('button[type="submit"]');
-  const originalText = btn.innerText;
-  btn.innerText = 'Sending...';
-  btn.disabled = true;
-  btn.style.opacity = '0.7';
-
-  // Build form data
-  const formData = new FormData(form);
-  const params = new URLSearchParams();
-  
-  // Add all form fields
-  for (let [key, value] of formData.entries()) {
-    params.append(key, value);
-  }
-  // Add form type identifier
-  params.append('Form Type', type);
-
-  // Submit via fetch (no-cors mode for cross-origin)
-  fetch(SCRIPT_URL, {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: params.toString()
-  })
-  .then(() => {
-    // Show success (no-cors prevents reading response, but request still goes through)
-    const panel = form.closest('.f-panel');
-    panel.innerHTML = '<div class="form-success"><div class="form-success-icon">✅</div><h3>Thank You!</h3><p>Your submission has been received and saved. Our team will respond within 48 business hours.</p></div>';
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-    btn.innerText = 'Error. Try Again';
-    btn.disabled = false;
-    btn.style.opacity = '1';
-    alert('Something went wrong. Please try again or email us directly at staffing@olyongroup.com');
-  });
-
-  return false; // Prevent default form submission
-}
+const PAGES = ['home','about','services','contact'];
+function closeMenus(){document.querySelectorAll('.nav-links').forEach(m=>m.classList.remove('mobile-open'));document.querySelectorAll('.mobile-menu-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-expanded','false')});}
+function showPage(name){if(!PAGES.includes(name))name='home';closeMenus();document.querySelectorAll('.page').forEach(p=>{const active=p.id==='page-'+name;p.classList.toggle('active',active);p.setAttribute('aria-hidden',String(!active));});document.querySelectorAll('.page-tab').forEach(t=>{const active=t.dataset.page===name;t.classList.toggle('active',active);t.setAttribute('aria-pressed',String(active));});document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+name&&!a.classList.contains('nav-cta')));history.replaceState(null,'','#'+name);window.scrollTo({top:0,behavior:'instant'});document.title=(name==='home'?'Olyon Group':name[0].toUpperCase()+name.slice(1)+' | Olyon Group');requestAnimationFrame(()=>observeReveals());}
+function toggleMobileMenu(btn){const menu=btn.closest('nav').querySelector('.nav-links');const open=!menu.classList.contains('mobile-open');closeMenus();menu.classList.toggle('mobile-open',open);btn.classList.toggle('active',open);btn.setAttribute('aria-expanded',String(open));}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenus()});document.addEventListener('click',e=>{if(e.target.closest('.nav-links.mobile-open a'))closeMenus()});
+function switchTab(name){document.querySelectorAll('.f-tab').forEach((t,i)=>{const active=(name==='apply'?i===0:i===1);t.classList.toggle('active',active);t.setAttribute('aria-selected',String(active))});document.querySelectorAll('.f-panel').forEach(p=>p.classList.toggle('active',p.id==='f-'+name));}
+let revealObserver;
+function observeReveals(){if(!revealObserver)return;document.querySelectorAll('.page.active .reveal:not(.is-visible)').forEach(el=>revealObserver.observe(el));}
+if('IntersectionObserver'in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');revealObserver.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px 40px 0px'});document.querySelectorAll('.step-card,.svc-card,.svc-page-card,.director-card,.val-item,.why-item').forEach(el=>el.classList.add('reveal'));}
+window.addEventListener('hashchange',()=>showPage(location.hash.slice(1)||'home'));document.addEventListener('DOMContentLoaded',()=>showPage(PAGES.includes(location.hash.slice(1))?location.hash.slice(1):'home'));
+function submitToSheet(form,type){if(!form.reportValidity())return false;const btn=form.querySelector('[type=submit]');if(btn.disabled)return false;const original=btn.textContent;btn.disabled=true;btn.textContent='Sending…';const data=new URLSearchParams(new FormData(form));data.append('Form Type',type);let status=form.querySelector('.form-status');if(!status){status=document.createElement('p');status.className='form-status';status.setAttribute('role','status');form.append(status)}status.textContent='Submitting your details…';fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data.toString()}).then(()=>{form.reset();status.textContent='Your request has been sent. Please note: confirmation of receipt is not available through this connection. If urgent, email staffing@olyongroup.com.';}).catch(()=>{status.textContent='We could not send your request. Please retry or email staffing@olyongroup.com.';}).finally(()=>{btn.disabled=false;btn.textContent=original});return false;}
 </script>
 </body>
 </html>
